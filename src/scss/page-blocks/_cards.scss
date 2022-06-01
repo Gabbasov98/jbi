@@ -1,0 +1,156 @@
+@import "../vars.scss";
+.done-card {
+    padding: 40px 32px;
+    background-color: $grey3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__img {
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+    &__title,
+    &__subtitle {
+        font-size: 16px;
+        line-height: 140%;
+        color: $grey;
+    }
+    &__title {
+        margin-top: 16px;
+        min-height: 66px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 8px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+    &__link {
+        height: 45px;
+    }
+    &__feedback {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $grey;
+        &:hover {
+            color: $grey;
+            text-decoration-line: underline;
+        }
+    }
+    &__bottom {
+        flex-grow: 1;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid $grey2;
+        display: flex;
+        flex-direction: column;
+    }
+    &__nav {
+        padding-top: 32px;
+        margin-top: auto;
+    }
+}
+
+.news-card {
+    &__img {
+        height: 180px;
+        display: block;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__tags {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__tag {
+        display: flex;
+        align-items: center;
+        padding: 0 17px;
+        border-radius: 50px;
+        border: 1px solid $grey2;
+        height: 34px;
+        font-size: 14px;
+        white-space: nowrap;
+        margin: 10px 10px 0 0;
+        &:hover {
+            background-color: $primaryHover;
+            border-color: $primaryHover;
+            color: $black;
+        }
+    }
+    &__title {
+        display: block;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        margin-top: 24px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        &:hover {
+            color: $primaryHover;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .news-card {
+        &__img {
+            height: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .done-card {
+        &__title,
+        &__subtitle,
+        &__desc {
+            font-size: 14px;
+        }
+        &__title {
+            margin-top: 12px;
+            min-height: 60px;
+        }
+        &__desc {
+            margin-top: 12px;
+        }
+        &__nav {
+            padding-top: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .news-card {
+        &__img {
+            height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .done-card {
+        padding: 40px 28px;
+    }
+}

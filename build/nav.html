@@ -1,0 +1,1114 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="ui.html" style="display: block; margin-bottom: 20px;">
+            UI-KIT 
+        </a>
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#consultModal">
+            Получить консультацию
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#estimateModal">
+            Просчет сметы
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#indevidualModal">
+            Индивидуальное производство
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#letterModal">
+            Письмо директору
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#thanksModal">
+            Благодарим за заказ!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#thanksModal2">
+            Благодарим за обращение!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#thanksModal3">
+            Вы успешно подписались на нашу рассылку!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#cityModal">
+            Выберите город
+        </button>
+
+    </div>
+
+    <div class="modal fade" id="quickOrder" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Быстрый заказ</div>
+        <div class="modal__desc">После отправки заказа, специалист свяжется с вами в течение 30 минут.</div>
+
+        <div class="modal__product">
+            <a href="" class="modal__product-img">
+                <img src="img/product.webp" alt="">
+            </a>
+            <a href="" class="modal__product-title">Плита перекрытия ПК 24-10-8</a> <div class='cartcalc modal__product-calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="consultModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Получить консультацию</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут. Проконсультирует по наличию, стоимости и условиям доставки.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="estimateModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Просчет сметы</div>
+        <div class="modal__desc">После отправки сметы, специались в течение 30 минут подберёт самые оптимальные варианты по стоимости и срокам. Ответ придёт вам на почту.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="indevidualModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Индивидуальное производство</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="letterModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Письмо директору</div>
+        <div class="modal__desc">Нам важна обратная связь, благодаря ей мы меняемся в лучшую сторону. После отправки директор свяжется с вами в течение рабочего дня.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за заказ!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за обращение!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal3" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Вы успешно подписались на нашу рассылку!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-city fade" id="cityModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal-city__title display2">Выберите город</div>
+        <form class="search-block modal-city__search form-group">
+            <input type="text" placeholder="Введите название или артикул товара">
+<div class="search-block__nav">
+    <button type="reset" class="search-block__reset">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.80708 1.3925C2.41656 1.00198 1.78339 1.00198 1.39287 1.3925C1.00234 1.78303 1.00234 2.41619 1.39287 2.80672L2.80708 1.3925ZM18.1929 19.6067C18.5834 19.9972 19.2166 19.9972 19.6071 19.6067C19.9976 19.2162 19.9976 18.583 19.6071 18.1925L18.1929 19.6067ZM1.39287 18.1925C1.00234 18.583 1.00234 19.2162 1.39287 19.6067C1.78339 19.9972 2.41656 19.9972 2.80708 19.6067L1.39287 18.1925ZM19.6071 2.80672C19.9976 2.41619 19.9976 1.78303 19.6071 1.3925C19.2166 1.00198 18.5834 1.00198 18.1929 1.3925L19.6071 2.80672ZM1.39287 2.80672L18.1929 19.6067L19.6071 18.1925L2.80708 1.3925L1.39287 2.80672ZM2.80708 19.6067L19.6071 2.80672L18.1929 1.3925L1.39287 18.1925L2.80708 19.6067Z" fill="#333333"/>
+        </svg>
+    </button>
+    <button class="search-block__submit">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 19L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+        </form>
+
+        <div class="modal-city__bottom">
+            <div class="modal-city__suggest">
+                <div class="modal-city__suggest-item">Москва</div>
+                <div class="modal-city__suggest-item modal-city__suggest-item--active">Екатеринбург</div>
+                <div class="modal-city__suggest-item">Пермь</div>
+            </div>
+            <div class="modal-city__letters">
+                <a href="#group1" class="modal-city__letter">А</a>
+                <a href="#group2" class="modal-city__letter">Б</a>
+                <a href="#group3" class="modal-city__letter">В</a>
+                <a href="#group4" class="modal-city__letter">Г</a>
+                <a href="#group5" class="modal-city__letter">Д</a>
+                <a href="#group6" class="modal-city__letter">Е</a>
+                <a href="" class="modal-city__letter">Ж</a>
+                <a href="" class="modal-city__letter">З</a>
+                <a href="" class="modal-city__letter">И</a>
+                <a href="" class="modal-city__letter">К</a>
+                <a href="" class="modal-city__letter">Л</a>
+                <a href="" class="modal-city__letter">М</a>
+                <a href="" class="modal-city__letter">Н</a>
+                <a href="" class="modal-city__letter">О</a>
+                <a href="" class="modal-city__letter">П</a>
+                <a href="" class="modal-city__letter">Р</a>
+                <a href="" class="modal-city__letter">С</a>
+                <a href="" class="modal-city__letter">Т</a>
+                <a href="" class="modal-city__letter">У</a>
+                <a href="" class="modal-city__letter">Ф</a>
+                <a href="" class="modal-city__letter">Х</a>
+                <a href="" class="modal-city__letter">Ч</a>
+                <a href="" class="modal-city__letter">Ш</a>
+                <a href="" class="modal-city__letter">Ю</a>
+                <a href="" class="modal-city__letter">Я</a>
+            </div>
+
+            <div class="modal-city__scroll">
+                <div class="modal-city__groups">
+                    <div id="group1" class="modal-city__group">
+                        <div class="modal-city__group-title">А</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group2" class="modal-city__group">
+                        <div class="modal-city__group-title">Б</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group3" class="modal-city__group">
+                        <div class="modal-city__group-title">В</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group4" class="modal-city__group">
+                        <div class="modal-city__group-title">Г</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group5" class="modal-city__group">
+                        <div class="modal-city__group-title">Д</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group6" class="modal-city__group">
+                        <div class="modal-city__group-title">Е</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="modal-backdrop show"></div> -->
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

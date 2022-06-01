@@ -1,0 +1,388 @@
+<div class="modal fade" id="quickOrder" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Быстрый заказ</div>
+        <div class="modal__desc">После отправки заказа, специалист свяжется с вами в течение 30 минут.</div>
+
+        <div class="modal__product">
+            <a href="" class="modal__product-img">
+                <img src="img/product.webp" alt="">
+            </a>
+            <a href="" class="modal__product-title">Плита перекрытия ПК 24-10-8</a> @@include('ui/_cartcalc.html',{"class":"modal__product-calc"})
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="consultModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Получить консультацию</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут. Проконсультирует по наличию, стоимости и условиям доставки.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+            </fieldset>
+            <div class="file-input">
+                @@include('ui/_file-input.html')
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="estimateModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Просчет сметы</div>
+        <div class="modal__desc">После отправки сметы, специались в течение 30 минут подберёт самые оптимальные варианты по стоимости и срокам. Ответ придёт вам на почту.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+            </fieldset>
+            <div class="file-input">
+                @@include('ui/_file-input.html')
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="indevidualModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Индивидуальное производство</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+            </fieldset>
+            <div class="file-input">
+                @@include('ui/_file-input.html')
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="letterModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Письмо директору</div>
+        <div class="modal__desc">Нам важна обратная связь, благодаря ей мы меняемся в лучшую сторону. После отправки директор свяжется с вами в течение рабочего дня.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+            </fieldset>
+            <div class="file-input">
+                @@include('ui/_file-input.html')
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за заказ!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за обращение!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks fade" id="thanksModal3" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Вы успешно подписались на нашу рассылку!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-city fade" id="cityModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal-city__title display2">Выберите город</div>
+        <form class="search-block modal-city__search form-group">
+            @@include('ui/_search-block.html')
+        </form>
+
+        <div class="modal-city__bottom">
+            <div class="modal-city__suggest">
+                <div class="modal-city__suggest-item">Москва</div>
+                <div class="modal-city__suggest-item modal-city__suggest-item--active">Екатеринбург</div>
+                <div class="modal-city__suggest-item">Пермь</div>
+            </div>
+            <div class="modal-city__letters">
+                <a href="#group1" class="modal-city__letter">А</a>
+                <a href="#group2" class="modal-city__letter">Б</a>
+                <a href="#group3" class="modal-city__letter">В</a>
+                <a href="#group4" class="modal-city__letter">Г</a>
+                <a href="#group5" class="modal-city__letter">Д</a>
+                <a href="#group6" class="modal-city__letter">Е</a>
+                <a href="" class="modal-city__letter">Ж</a>
+                <a href="" class="modal-city__letter">З</a>
+                <a href="" class="modal-city__letter">И</a>
+                <a href="" class="modal-city__letter">К</a>
+                <a href="" class="modal-city__letter">Л</a>
+                <a href="" class="modal-city__letter">М</a>
+                <a href="" class="modal-city__letter">Н</a>
+                <a href="" class="modal-city__letter">О</a>
+                <a href="" class="modal-city__letter">П</a>
+                <a href="" class="modal-city__letter">Р</a>
+                <a href="" class="modal-city__letter">С</a>
+                <a href="" class="modal-city__letter">Т</a>
+                <a href="" class="modal-city__letter">У</a>
+                <a href="" class="modal-city__letter">Ф</a>
+                <a href="" class="modal-city__letter">Х</a>
+                <a href="" class="modal-city__letter">Ч</a>
+                <a href="" class="modal-city__letter">Ш</a>
+                <a href="" class="modal-city__letter">Ю</a>
+                <a href="" class="modal-city__letter">Я</a>
+            </div>
+
+            <div class="modal-city__scroll">
+                <div class="modal-city__groups">
+                    <div id="group1" class="modal-city__group">
+                        <div class="modal-city__group-title">А</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group2" class="modal-city__group">
+                        <div class="modal-city__group-title">Б</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group3" class="modal-city__group">
+                        <div class="modal-city__group-title">В</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group4" class="modal-city__group">
+                        <div class="modal-city__group-title">Г</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group5" class="modal-city__group">
+                        <div class="modal-city__group-title">Д</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group6" class="modal-city__group">
+                        <div class="modal-city__group-title">Е</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="modal-backdrop show"></div> -->

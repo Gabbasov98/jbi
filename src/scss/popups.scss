@@ -1,0 +1,314 @@
+@import 'vars';
+@import 'mixins';
+.modal-backdrop {
+    &.show {
+        opacity: 1;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+.modal {
+    &-dialog {
+        max-width: 613px;
+        padding: 64px;
+        background-color: #fff;
+        pointer-events: unset;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        &:hover {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    &__title {
+        text-align: center;
+        max-width: 490px;
+        margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 16px;
+        text-align: center;
+    }
+    &__product {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        &-img {
+            flex-shrink: 0;
+            display: block;
+            width: 120px;
+            height: 80px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 16px;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-title {
+            max-width: 220px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            display: block;
+        }
+        &-calc {
+            margin-left: auto;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+    }
+    &__check {
+        margin-top: 32px;
+    }
+    &__btn {
+        width: 100%;
+        margin-top: 32px;
+    }
+}
+
+.modal-thanks {
+    .modal {
+        &-dialog {
+            padding: 85px 20px;
+        }
+    }
+}
+
+.modal-city {
+    .modal {
+        &-dialog {
+            max-width: 1000px;
+            max-height: 700px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding-bottom: 15px;
+        }
+    }
+    &__search {
+        margin-top: 20px;
+    }
+    &__suggest {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        &-item {
+            margin: 16px 32px 0 0;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            &:hover,
+            &--active {
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+            &--active {
+                pointer-events: none;
+            }
+        }
+    }
+    &__letters {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: calc(100% + 7px);
+    }
+    &__letter {
+        flex-shrink: 0;
+        width: 28px;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid $grey2;
+        margin: 7px 7px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        &--active,
+        &:hover {
+            cursor: pointer;
+            background-color: $primary;
+            border-color: $primary;
+            color: $black;
+        }
+        &--active {
+            pointer-events: none;
+        }
+    }
+    &__bottom {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+    &__scroll {
+        margin-top: 48px;
+        flex-grow: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 0;
+        padding-right: 24px;
+        @include scroll;
+        scroll-behavior: smooth;
+    }
+    &__groups {}
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            padding-bottom: 12px;
+            border-bottom: 1px solid $grey2;
+        }
+    }
+    &__list {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+    &__item {
+        font-size: 16px;
+        line-height: 140%;
+        color: $grey;
+        transition: all .225s;
+        &:hover {
+            color: $black;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal {
+        &-dialog {
+            height: 100vh;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            overflow-y: auto;
+            padding: 64px 20px 30px;
+        }
+        &__desc {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        &__check {
+            margin-top: 24px;
+        }
+        &__btn {
+            margin-top: 24px;
+        }
+    }
+    .modal-city {
+        .modal {
+            &-dialog {
+                max-height: unset;
+                padding-bottom: 10px;
+            }
+        }
+        &__bottom {
+            position: relative;
+            padding-left: 65px;
+            margin-top: 20px;
+        }
+        &__letters {
+            width: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 0;
+            background-color: $grey3;
+            min-height: 100%;
+            padding: 10px 0;
+        }
+        &__letter {
+            border-radius: 0;
+            width: 100%;
+            margin: 0;
+            color: $grey;
+            border: none;
+            font-size: 12px;
+            line-height: 120%;
+            height: unset;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &__suggest {
+            margin: -12px 0 0;
+            display: block;
+            &-item {
+                margin-right: 0;
+                font-size: 15px;
+                line-height: 140%;
+                margin-top: 12px;
+            }
+        }
+        &__scroll {
+            margin-top: 28px;
+        }
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+            &-title {
+                font-size: 15px;
+                line-height: 140%;
+                padding: 12px 0;
+                border-top: 1px solid $grey2;
+            }
+        }
+        &__list {
+            margin-top: 12px;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        &__item {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal {
+        &__product {
+            flex-wrap: wrap;
+            &-title {
+                max-width: unset;
+                width: calc(100% - 136px);
+            }
+            &-calc {
+                margin: 10px auto 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+
+
+            <div class="ui-kit">
+
+                <div class="ui-kit__group">
+                    <div class="ui-kit__title display1">Кнопки</div>
+                    <div class="ui-kit__buttons">
+                        <button class="btn btn-yellow">Отправить </button>
+                        <button disabled class="btn btn-yellow">Отправить </button>
+                    </div>
+                    <div class="ui-kit__buttons">
+                        <button class="btn btn-black-outline">Отправить </button>
+                        <button disabled class="btn btn-black-outline">Отправить </button>
+                    </div>
+                    <div class="ui-kit__buttons">
+                        <a href="" class="link link1">
+                            <span>Все проекты</span>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+                        <a href="" class="link link--disabled link1">
+                            <span>Все проекты</span>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <div class="ui-kit__buttons">
+                        <a href="" class="link link2">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.5L6 6.5L1 1.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            <span>Все товары</span>
+                        </a>
+                        <a href="" class="link link--disabled link2">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.5L6 6.5L1 1.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            <span>Все товары</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ui-kit__group">
+                    <div class="ui-kit__title display1">Поля</div>
+                    <div class="ui-kit__inputs">
+                        <fieldset class='form-group'>
+                            @@include('components/ui/_input.html',{"type":"text","label":"Имя*"})
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            @@include('components/ui/_input.html',{"type":"text","label":"Имя*"})
+                        </fieldset>
+                    </div>
+                    <div class="ui-kit__inputs">
+                        <fieldset class='form-group'>
+                            @@include('components/ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            @@include('components/ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+                        </fieldset>
+                    </div>
+
+                </div>
+
+
+                <div class="ui-kit__group">
+                    <div class="ui-kit__title display1">Загрузка файлов</div>
+                    <div class="ui-kit__inputs">
+                        <div class="file-input">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--error">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--uploading">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--uploaded">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

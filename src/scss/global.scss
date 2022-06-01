@@ -1,0 +1,30 @@
+@import 'vars';
+html {
+    width: 100%;
+}
+
+body {
+    font-family: $font1;
+    font-weight: 400;
+    color: $black;
+    font-size: 18px;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+a {
+    &:hover {
+        color: $primaryHover;
+    }
+}

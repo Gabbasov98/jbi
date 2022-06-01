@@ -1,0 +1,101 @@
+@import "../vars";
+.display1 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 125%;
+}
+
+.display2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+}
+
+.display3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.semiBold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+p {
+    line-height: 140%;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+ul {
+    li {
+        line-height: 140%;
+        padding-left: 30px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $black;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .display1 {
+        font-size: 42px;
+    }
+    .display2 {
+        font-size: 30px;
+    }
+    .display3 {
+        font-size: 18px;
+    }
+    ul {
+        li {
+            padding-left: 23px;
+            &::before {
+                left: 7px;
+                width: 5px;
+                height: 5px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .display1,
+    .display2 {
+        font-size: 26px;
+        line-height: 125%;
+    }
+    p {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .display1,
+    .display2 {
+        font-size: 24px;
+    }
+}

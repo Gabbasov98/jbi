@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'components/fonts.scss';
+.search-block {
+    position: relative;
+    margin: 0;
+    &--active {
+        .search-block {
+            &__submit {
+                display: none;
+            }
+            &__reset {
+                display: flex;
+            }
+        }
+    }
+    input {
+        height: 49px;
+        padding-right: 50px;
+    }
+    &__nav {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__reset {
+        display: none;
+        &:hover {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+    &__submit {
+        &:hover {
+            path {
+                stroke: $primary;
+            }
+        }
+    }
+}
