@@ -117,6 +117,7 @@
     }
 }
 
+.catalog-sublink,
 .catalog-link {
     display: flex;
     align-items: center;
@@ -144,7 +145,18 @@
     }
     &:hover {
         color: $black;
+        cursor: pointer;
         .catalog-link__title {
+            text-decoration: underline;
+        }
+    }
+}
+
+.catalog-sublink {
+    padding-left: 27px;
+    background-image: url(../img/minus.svg);
+    &:hover {
+        .catalog-sublink__title {
             text-decoration: underline;
         }
     }

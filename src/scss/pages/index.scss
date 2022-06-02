@@ -118,8 +118,12 @@
         margin-top: 20px;
         max-width: 735px;
     }
-    &__btn {
+    &__nav {
         margin-top: 44px;
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
         height: 49px;
     }
     &__bottom {
@@ -135,6 +139,40 @@
         font-size: 16px;
         line-height: 140%;
         margin-top: 6px;
+    }
+    &__hint {
+        font-size: 14px;
+        line-height: 140%;
+        max-width: 156px;
+        margin-left: 32px;
+    }
+    &__phone {
+        margin-left: 28px;
+        font-size: 18px;
+        &-link {
+            line-height: 140%;
+        }
+        &-title {
+            font-size: 10px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            text-align: center;
+            color: $grey;
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-left: 28px;
+        &-item {
+            margin-right: 20px;
+            &:hover {
+                path {
+                    fill: $primary;
+                }
+            }
+        }
     }
 }
 
@@ -579,13 +617,37 @@
         &__desc {
             margin-top: 16px;
         }
-        &__btn {
+        &__nav {
             margin-top: 32px;
+            flex-wrap: wrap;
+        }
+        &__btn {
             font-size: 14px;
         }
         &__bottom {
             margin-top: 75px;
             padding-right: 80px;
+        }
+        &__hint {
+            display: none;
+        }
+        &__phone {
+            margin-left: 0;
+        }
+    }
+    .calc-estimate2 {
+        .calc-estimate {
+            &__btn {
+                font-size: 16px;
+                @media screen and (min-width: 800px) {
+                    margin: 0 calc(100% - 195px) 32px 0;
+                }
+            }
+            &__bottom {
+                @media screen and (min-width: 800px) {
+                    margin-top: 52px;
+                }
+            }
         }
     }
     .info {
@@ -760,6 +822,28 @@
             font-size: 14px;
             line-height: 140%;
             margin-top: 8px;
+        }
+        &__phone {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        &__socials {
+            margin: 20px 0 0;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .calc-estimate2 {
+        .calc-estimate {
+            &__img {
+                img {
+                    margin-right: -100px;
+                }
+            }
+            &__bottom {
+                padding-right: 110px;
+            }
         }
     }
     .info {
@@ -942,7 +1026,7 @@
             right: 16px;
             top: 50%;
             transform: translateY(-50%);
-            background-image: url(../../img/right-arrow2.svg);
+            background-image: url(../img/right-arrow2.svg);
             background-repeat: no-repeat;
             background-position: center;
         }
