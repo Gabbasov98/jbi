@@ -28,3 +28,15 @@ a {
         color: $primaryHover;
     }
 }
+
+.lb-nav a.lb-prev {
+    background-image: url(../img/prev.webp);
+}
+
+.lb-nav a.lb-next {
+    background-image: url(../img/next.webp);
+}
+
+.lightboxOverlay {
+    width: 100% !important;
+}

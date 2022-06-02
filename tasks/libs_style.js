@@ -2,6 +2,7 @@ const plugins = [
     'node_modules/bootstrap/dist/css/bootstrap.css',
     'node_modules/priority-nav/dist/priority-nav-core.css',
     'node_modules/swiper/swiper-bundle.css',
+    'node_modules/lightbox2/dist/css/lightbox.css',
     // 'src/libs/css/jquery.fancybox.min.css',
 ];
 

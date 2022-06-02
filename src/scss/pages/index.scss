@@ -493,6 +493,19 @@
             right: 15px;
         }
     }
+    .calc-estimate2 {
+        .calc-estimate {
+            @media screen and (min-width: 1200px) {
+                &__inner {
+                    padding-right: 350px;
+                }
+                &__hint,
+                &__phone {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
     .info {
         &__inner {
             flex-direction: column;

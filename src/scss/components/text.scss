@@ -30,10 +30,13 @@ p {
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+    strong {
+        font-weight: 600;
+    }
 }
 
 ul {
-    li {
+    &>li {
         line-height: 140%;
         padding-left: 30px;
         position: relative;
@@ -51,6 +54,31 @@ ul {
         }
         &:not(:last-child) {
             margin-bottom: 8px;
+        }
+    }
+}
+
+ol {
+    counter-reset: num;
+    padding: 0;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &>li {
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        position: relative;
+        padding-left: 28px;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        &:before {
+            content: counter(num) ".";
+            counter-increment: num;
+            margin-right: 4px;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
 }
@@ -76,6 +104,11 @@ ul {
             &:not(:last-child) {
                 margin-bottom: 4px;
             }
+        }
+    }
+    ol {
+        &>li {
+            padding-left: 18px;
         }
     }
 }

@@ -4,6 +4,7 @@ const plugins = [
     'src/libs/js/jquery.maskedinput.min.js',
     'node_modules/priority-nav/dist/priority-nav.min.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/lightbox2/dist/js/lightbox.js',
     // 'src/libs/js/jquery.fancybox.min.js',
 
 ];
