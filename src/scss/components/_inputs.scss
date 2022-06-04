@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     input {
+        background-color: transparent;
         border: none;
         width: calc(100% - 44px);
         font-weight: 600;
@@ -19,6 +20,7 @@
         &:focus,
         &:active {
             border-color: $grey2;
+            background-color: #fff;
         }
     }
     button {
@@ -314,6 +316,79 @@
                 top: 0;
                 max-width: 100%;
             }
+        }
+    }
+}
+
+.custom-select {
+    &--active {
+        .custom-select__dropdown {
+            opacity: 1;
+            pointer-events: unset;
+        }
+        .custom-select__arrow {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        input {
+            pointer-events: none;
+        }
+    }
+    input {
+        height: 40px;
+        padding: 0 35px 0 22px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    &__arrow {
+        position: absolute;
+        right: 22px;
+        top: 11.5px;
+        pointer-events: none;
+    }
+    &__dropdown {
+        position: absolute;
+        top: 100%;
+        margin-top: 4px;
+        width: 100%;
+        z-index: 20;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid $grey2;
+        padding: 10px 22px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .225s;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 140%;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        &:hover {
+            color: $primaryHover;
+            cursor: pointer;
+        }
+        &--selected {
+            pointer-events: none;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .custom-select {
+        input {
+            padding: 0 30px 0 18px;
+        }
+        &__dropdown {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        &__arrow {
+            right: 12px;
         }
     }
 }

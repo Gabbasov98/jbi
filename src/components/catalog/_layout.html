@@ -1,0 +1,212 @@
+<section class='catalog-page'>
+    <div class='container'>
+        <div class='catalog-page__inner'>
+            <div class="catalog-page__left">
+                @@include('_filter.html')
+
+                <div class="catalog-page__consult">
+                    <img src="img/individual.webp" alt="">
+                    <div class="catalog-page__consult-title">Проектируем и производим на заказ по индивидуальным чертежам</div>
+                    <button class="catalog-page__consult-btn btn btn-yellow">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="catalog-page__right">
+                <div class="tags">
+                    <div class="tag">
+                        <span>ГОСТ 9195.68</span>
+                        <button></button>
+                    </div>
+                    <div class="tag">
+                        <span>Д: 1600</span>
+                        <button></button>
+                    </div>
+                    <div class="tag">
+                        <span>Ш: 900</span>
+                        <button></button>
+                    </div>
+                    <div class="tag">
+                        <span>В: 900</span>
+                        <button></button>
+                    </div>
+                    <div class="tag tag--clear">
+                        <span>Очистить все</span>
+                        <button></button>
+                    </div>
+                </div>
+
+                <div class="mobs-filter">
+                    <div class="mobs-filter__left">
+                        <!-- Количество выводить в атрибуте - data-filter-num -->
+                        <!-- если удалите этот класс, кружочек с количеством исчезнет mobs-filter__btn--selected -->
+                        <button data-filter-num="1" class="mobs-filter__btn mobs-filter__btn--selected btn btn-black">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3346 2.5H1.66797L8.33464 10.3833V15.8333L11.668 17.5V10.3833L18.3346 2.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Фильтры</span>
+                    </button>
+                        <div class="mobs-filter__title">Найден 1201 товар</div>
+                    </div>
+                    <fieldset class='mobs-filter__select form-group custom-select'>
+                        <input readonly type='text' />
+                        <span class="custom-select__arrow">
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 0.5L6 5.5L11 0.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                        <div class="custom-select__dropdown">
+                            <div class="custom-select__item custom-select__item--selected">По названию А-Я</div>
+                            <div class="custom-select__item">По названию Я-А</div>
+                            <div class="custom-select__item">Сначала дешевые</div>
+                            <div class="custom-select__item">Сначала дорогие</div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="sort">
+                    @@include('_sort.html')
+                </div>
+
+                <div class="catalog-page__items">
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                    <div class="catalog-card">
+                        @@include('../cards/_catalog-card.html')
+                    </div>
+                </div>
+
+                <button class="show-more">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 1V7H13" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 11.0001C1.00158 9.26342 1.5056 7.56429 2.45125 6.10764C3.39691 4.651 4.74382 3.49907 6.32951 2.79079C7.9152 2.08252 9.67195 1.84815 11.3879 2.11596C13.1038 2.38377 14.7056 3.14232 16 4.30011L19 7.00011" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 21V15H7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 11C18.9984 12.7367 18.4944 14.4358 17.5487 15.8925C16.6031 17.3491 15.2562 18.501 13.6705 19.2093C12.0848 19.9176 10.3281 20.152 8.61214 19.8841C6.89623 19.6163 5.29445 18.8578 4 17.7L1 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Загрузить еще 20 товаров</span>
+                </button>
+
+                <div class="pagination">
+                    <a href="" class="pagination__btn pagination__btn--prev">
+                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292891 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292891 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292891 8.70711ZM31 9H0.999998V7H31V9Z" fill="#333333"/>
+                        </svg>
+                    </a>
+
+                    <a href="" class="pagination__item pagination__item--active">1</a>
+                    <a href="" class="pagination__item">2</a>
+                    <a href="" class="pagination__item">3</a>
+                    <a href="" class="pagination__item">4</a>
+                    <a href="" class="pagination__item">...</a>
+                    <a href="" class="pagination__item">124</a>
+
+                    <a href="" class="pagination__btn pagination__btn--next">
+                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="#333333"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='text-block'>
+    <div class='container'>
+        <div class="text-block__title display2">ЖБИ для зданий и сооружений с доставкой по всей России</div>
+        <p>В этом разделе вы найдете изделия ЖБИ для обустройства подвалов и основных несущих конструкций. Фундаменты, плиты перекрытий, перемычки, лестничные ступени и прогоны, балконные плиты, лифтовые шахты и многое другое — словом все, что необходимо
+            для сооружений самой сложной структуры.</p>
+        <p>Железобетонные элементы зданий и сооружений изготавливаются из сырья высокого качества. Поэтому они пригодны для производственных и общественных зданий, в том числе тех, которые подвержены атмосферным осадкам и воздействиям агрессивных сред.
+        </p>
+        <p>Купить ЖБИ изделия можно в нужном вам количестве, по привлекательной цене. А мы позаботимся об оперативной доставке вашего заказа прямо на строительный объект.</p>
+    </div>
+</section>
+
+<section class='calc-estimate calc-estimate2'>
+    <div class='container'>
+        <div class='calc-estimate__inner'>
+            <div class="calc-estimate__info">
+                <div class="calc-estimate__title display2">Нужна помощь?</div>
+                <div class="calc-estimate__desc">После отправки сметы, руководитель в течение 30 минут подберёт самые оптимальные варианты по стоимости и срокам. Ответ придёт вам на почту.</div>
+                <div class="calc-estimate__nav">
+                    <button class="calc-estimate__btn btn btn-yellow">Отправить смету</button>
+                    <div class="calc-estimate__hint">
+                        или свяжитесь с нами самостоятельно
+                    </div>
+                    <div class="calc-estimate__phone">
+                        <a href="tel:88001252478" class="calc-estimate__phone-link">8 800 125 24 78</a>
+                        <div class="calc-estimate__phone-title">бесплатно по рф</div>
+                    </div>
+                    <div class="calc-estimate__socials">
+                        <a href="" class="calc-estimate__socials-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM5 11.9801C5 8.13128 8.14012 5 11.9999 5C15.8597 5 18.9998 8.13128 18.9998 11.9801C18.9998 12.5254 18.9543 12.9668 18.8524 13.4098L18.8509 13.4172C18.8506 13.4185 18.8 13.6227 18.7721 13.7119C18.5991 14.2636 18.2859 14.7231 17.8662 15.0408C17.4593 15.3488 16.9547 15.5185 16.4455 15.5185C16.3826 15.5185 16.3193 15.516 16.2572 15.511C15.5341 15.4531 14.8983 15.0737 14.5084 14.4686C13.8379 15.141 12.9482 15.5109 11.9999 15.5109C10.0476 15.5109 8.45921 13.927 8.45921 11.9801C8.45921 10.0333 10.0476 8.44947 11.9999 8.44947C13.9522 8.44947 15.5406 10.0333 15.5406 11.9801V13.1183C15.5435 13.7824 15.9904 14.0538 16.3722 14.0846C16.7521 14.1138 17.2576 13.8932 17.4337 13.173C17.5206 12.7781 17.5647 12.3766 17.5647 11.9801C17.5647 8.92035 15.0683 6.43106 11.9999 6.43106C8.93147 6.43106 6.43515 8.92035 6.43515 11.9801C6.43515 15.0399 8.93147 17.5293 11.9999 17.5293C13.068 17.5293 14.1068 17.2251 15.004 16.6495L15.02 16.6392L15.963 17.7325L15.9428 17.7463C14.7774 18.5405 13.414 18.9604 11.9999 18.9604C8.14012 18.9604 5 15.829 5 11.9801Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1054 11.9801C14.1054 13.1379 13.1609 14.0798 11.9999 14.0798C10.8389 14.0798 9.89436 13.1379 9.89436 11.9801C9.89436 10.8224 10.8389 9.88058 11.9999 9.88058C13.1609 9.88058 14.1054 10.8224 14.1054 11.9801Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <a href="" class="calc-estimate__socials-item">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11.3626 17.1199C14.9689 17.1184 17.902 14.1846 17.9035 10.579C17.9042 8.83132 17.2244 7.18796 15.9895 5.95165C14.7546 4.71527 13.1123 4.03409 11.3625 4.03333C7.75721 4.03333 4.82294 6.96744 4.82151 10.5739C4.82102 11.7267 5.12221 12.8519 5.69461 13.8439L4.76667 17.2333L8.23412 16.3237C9.18949 16.8449 10.2652 17.1195 11.3599 17.1199H11.3626Z" fill="#333333"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39468 15.1396L6.33705 15.6794L6.88626 13.6732L6.757 13.4675C6.21279 12.6019 5.92536 11.6015 5.92578 10.5742C5.92697 7.57676 8.36583 5.13812 11.3646 5.13812C12.8167 5.13862 14.1817 5.70483 15.2082 6.73245C16.2346 7.76008 16.7996 9.12597 16.799 10.5786C16.7978 13.5764 14.359 16.0152 11.3625 16.0152H11.3603C10.3847 16.0149 9.42791 15.7528 8.5932 15.2574L8.39468 15.1396ZM14.6578 12.1344C14.6169 12.0663 14.508 12.0254 14.3445 11.9435C14.1811 11.8617 13.3776 11.4664 13.2277 11.4118C13.078 11.3573 12.969 11.33 12.86 11.4936C12.7511 11.6572 12.4379 12.0254 12.3425 12.1344C12.2472 12.2435 12.1518 12.2572 11.9885 12.1753C11.825 12.0935 11.2984 11.921 10.6741 11.3641C10.1883 10.9308 9.86027 10.3956 9.76494 10.2319C9.6696 10.0683 9.75477 9.9799 9.83659 9.8984C9.91012 9.82515 10 9.70747 10.0818 9.61206C10.1635 9.51666 10.1907 9.44844 10.2452 9.33944C10.2997 9.23031 10.2724 9.13491 10.2316 9.05309C10.1907 8.97128 9.86385 8.16681 9.72766 7.83956C9.59498 7.52087 9.46025 7.56404 9.35993 7.55901C9.26471 7.55423 9.15564 7.55322 9.04669 7.55322C8.93774 7.55322 8.76067 7.59413 8.61087 7.75775C8.46106 7.92138 8.03885 8.31678 8.03885 9.12119C8.03885 9.92565 8.62448 10.7028 8.7062 10.8119C8.78791 10.921 9.85865 12.5718 11.4982 13.2797C11.8881 13.4481 12.1925 13.5487 12.4299 13.624C12.8214 13.7484 13.1777 13.7308 13.4593 13.6887C13.7733 13.6418 14.4262 13.2934 14.5625 12.9116C14.6986 12.5298 14.6986 12.2026 14.6578 12.1344Z" fill="#333333"></path>
+                            </svg>
+                        </a>
+                        <a href="" class="calc-estimate__socials-item">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92488 22 0 17.0751 0 11C0 4.92488 4.92488 0 11 0C17.0751 0 22 4.92488 22 11ZM7.3661 9.99235C6.26418 10.4735 5.132 10.9678 4.0967 11.5381C3.5561 11.9339 4.27459 12.2139 4.94867 12.4765C5.05583 12.5183 5.16184 12.5596 5.26153 12.6008C5.34449 12.6264 5.42882 12.6532 5.5143 12.6804C6.264 12.9193 7.0999 13.1856 7.82774 12.785C9.02335 12.0982 10.1516 11.3041 11.2791 10.5107C11.6485 10.2508 12.0177 9.99089 12.3893 9.73486C12.4067 9.72373 12.4263 9.71098 12.4478 9.6971C12.7643 9.4919 13.4761 9.0305 13.2128 9.6663C12.5902 10.3472 11.9233 10.9499 11.2528 11.556C10.8009 11.9644 10.3473 12.3743 9.90454 12.8106C9.51894 13.124 9.1185 13.754 9.55029 14.1928C10.5448 14.889 11.5549 15.5683 12.5644 16.2473C12.8929 16.4682 13.2214 16.6892 13.5492 16.9106C14.1048 17.3542 14.9731 16.9954 15.0952 16.3022C15.1495 15.9834 15.2041 15.6645 15.2586 15.3457C15.56 13.5835 15.8615 11.8207 16.1278 10.0529C16.164 9.77552 16.2051 9.49823 16.2461 9.2208C16.3456 8.54838 16.4453 7.87513 16.4764 7.19909C16.3962 6.52442 15.5782 6.67278 15.1229 6.82449C12.7831 7.71485 10.4665 8.67121 8.1592 9.64443C7.89782 9.76021 7.63285 9.87589 7.3661 9.99235Z" fill="#333333"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="calc-estimate__bottom">
+                    <div class="calc-estimate__name">Ильин Михаил</div>
+                    <div class="calc-estimate__prof">Коммерческий директор</div>
+                </div>
+            </div>
+            <div class="calc-estimate__img">
+                <img src="img/man4.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>

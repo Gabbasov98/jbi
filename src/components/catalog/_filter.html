@@ -1,0 +1,202 @@
+<div class="filter">
+    <div class="filter__top">
+        <div class="filter__title display3">Найден 1201 товар</div>
+    </div>
+    <div class="filter__mob">
+        <div class="filter__mob1 filter__mob-top">
+            <div class="filter__mob-title">Фильтры</div>
+            <button class="filter__mob-close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 1L1 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="filter__mob2 filter__mob-top">
+            <button class="filter__mob-back">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 1L2 7L9 13" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="filter__mob-title"></div>
+            <button class="filter__mob-close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 1L1 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="filter__bottom">
+        <div class="filter__scroll">
+            <div class="filter__group">
+                <div class="filter__show filter__show--active">
+                    <div class="filter__subtitle display3">Цена, руб</div>
+                    <button class="filter__toggle">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter__hidden filter__hidden--active">
+                    <div class="filter__price">
+                        <input value="3000" type="number">
+                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1" x2="10" y2="1" stroke="#333333" stroke-width="2"/>
+                        </svg>
+                        <input value="500000" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__group">
+                <div class="filter__show filter__show--active">
+                    <div class="filter__subtitle display3">Длина, мм</div>
+                    <button class="filter__toggle">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter__more">См. все</button>
+                </div>
+                <div class="filter__hidden filter__hidden--active">
+                    <div class="filter__checks-wrap">
+                        @@include('_filter-checks.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__group">
+                <div class="filter__show filter__show--active">
+                    <div class="filter__subtitle display3">Ширина, мм</div>
+                    <button class="filter__toggle">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter__more">См. все</button>
+                </div>
+                <div class="filter__hidden filter__hidden--active">
+                    <div class="filter__checks-wrap">
+                        @@include('_filter-checks.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__group">
+                <div class="filter__show">
+                    <div class="filter__subtitle display3">Высота, мм</div>
+                    <button class="filter__toggle">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter__more">См. все</button>
+                </div>
+                <div class="filter__hidden">
+                    <div class="filter__checks-wrap">
+                        @@include('_filter-checks.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__group">
+                <div class="filter__show">
+                    <div class="filter__subtitle display3">Стандарты</div>
+                    <button class="filter__toggle">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter__more">См. все</button>
+                </div>
+                <div class="filter__hidden">
+                    <div class="filter__checks filter__checks--standarts">
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    ГОСТ 778.814 <span class="grey-text">(52)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    ГОСТ 9195.68 <span class="grey-text">(1)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    ГОСТ 9195.70 <span class="grey-text">(3)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    ГОСТ 9195.70 <span class="grey-text">(3)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Серия 1.054-4.1 <span class="grey-text">(6)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Серия 2.587-1 <span class="grey-text">(6)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Чертеж 34 ЖБ <span class="grey-text">(10)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Чертеж 57 ВВ <span class="grey-text">(10)</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="filter__check filter__check-hidden check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Чертеж 34 ЖБ <span class="grey-text">(10)</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter__check filter__check-hidden check">
+                            <input type='checkbox' />
+                            <label>
+                                <span>
+                                    Чертеж 57 ВВ <span class="grey-text">(10)</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="filter__bg"></div>

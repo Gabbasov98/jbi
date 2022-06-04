@@ -254,6 +254,349 @@
     }
 }
 
+.catalog-card {
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $grey2;
+    font-size: 16px;
+    &__info {
+        width: 332px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    &__has {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+        i {
+            background-color: $green;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            display: block;
+        }
+    }
+    &__size {
+        max-width: 500px;
+        margin: 0 0 0 48px;
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 19px;
+    }
+    &__weight {
+        width: 90px;
+        flex-shrink: 0;
+    }
+    &__action {
+        width: 163px;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    &__price {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    &__nav {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+    }
+    &__order {
+        flex-grow: 1;
+        width: unset;
+        height: 37px;
+        padding: 0;
+        font-size: 14px;
+    }
+    &__estimate {
+        width: 47px;
+        height: 37px;
+        margin-left: 12px;
+    }
+}
+
+.blog-card {
+    display: block;
+    &__img {
+        height: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        line-height: 120%;
+        margin-top: 20px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.catalog-card2 {
+    padding: 12px 32px 40px;
+    border: 1px solid $grey2;
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title,
+    &__price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        display: block;
+        margin-top: 22px;
+    }
+    &__wrap {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+    }
+    &__has {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+        i {
+            background-color: $green;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            display: block;
+        }
+    }
+    &__art {
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+        margin-left: 40px;
+    }
+    &__btn {
+        margin-top: 22px;
+        padding: 0;
+        height: 37px;
+        font-size: 14px;
+    }
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    padding: 32px 40px;
+    border: 1px solid $grey2;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__img {
+        width: 256px;
+        height: 152px;
+        flex-shrink: 0;
+        margin-right: 40px;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+    }
+    &__wrap {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px 39px;
+    }
+    &__days {
+        font-size: 16px;
+        line-height: 140%;
+        span {
+            display: block;
+            line-height: inherit;
+        }
+    }
+    &__phone,
+    &__mail {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        display: block;
+    }
+    &__mail {
+        margin-top: 12px;
+    }
+    &__socials {
+        &-item {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            svg {
+                margin-right: 12px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+            &:hover {
+                color: $black;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.team-card {
+    &__img {
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__prof {
+        font-size: 16px;
+        line-height: 140%;
+        color: $grey;
+        margin-top: 28px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        margin-top: 12px;
+    }
+    &__items {
+        margin-top: 20px;
+        padding-top: 20px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 1px;
+            background-color: $black;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        line-height: 140%;
+        svg {
+            margin-right: 12px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+        &:hover {
+            color: $black;
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.search-card {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    border-bottom: 1px solid $grey2;
+    &__img {
+        display: block;
+        width: 180px;
+        height: 100px;
+        margin-right: 40px;
+        flex-shrink: 0;
+        background-color: $grey3;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        flex-grow: 1;
+    }
+    &__title {
+        font-weight: 600;
+        line-height: 120%;
+    }
+    &__art {
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+        margin-top: 8px;
+    }
+    &__calc {
+        width: 95px;
+        margin-right: 100px;
+        flex-shrink: 0;
+    }
+    &__action {
+        width: 163px;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    &__price {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    &__nav {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+    }
+    &__order {
+        flex-grow: 1;
+        width: unset;
+        height: 37px;
+        padding: 0;
+        font-size: 14px;
+    }
+    &__estimate {
+        width: 47px;
+        height: 37px;
+        margin-left: 12px;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     .news-card {
         &__img {
@@ -262,6 +605,59 @@
     }
     .requisit-card {
         padding: 28px;
+    }
+    .catalog-card {
+        padding: 20px;
+        &__info {
+            width: 220px;
+            flex-grow: 1;
+        }
+        &__size {
+            flex-grow: 0;
+            margin-left: 18px;
+            width: 400px;
+        }
+        &__weight {
+            width: 70px;
+            margin: 0 20px;
+        }
+    }
+    .contact-card {
+        &__img {
+            width: 256px;
+            height: 222px;
+            margin-right: 32px;
+        }
+        &__top {
+            display: block;
+        }
+        &__link {
+            display: block;
+            margin: 8px 0 0;
+        }
+        &__wrap {
+            margin-top: 32px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__days {
+            @media screen and (min-width: 800px) {
+                grid-column: 1/3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .catalog-card {
+        &__size {
+            width: 343px;
+            grid-template-columns: 95px 107px 103px;
+        }
+    }
+    .team-card {
+        &__img {
+            height: 420px;
+        }
     }
 }
 
@@ -286,12 +682,141 @@
     .qa-card {
         padding: 20px 32px;
     }
+    .catalog-card {
+        padding: 16px 20px;
+        font-size: 14px;
+        &__info {
+            max-width: 400px;
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__size {
+            display: flex;
+            gap: unset;
+            height: 17px;
+            width: 170px;
+            margin-left: 28px;
+        }
+        &__length {
+            margin-right: 5px;
+            white-space: nowrap;
+            &:before {
+                content: 'Д: ';
+            }
+            &::after {
+                content: ",";
+            }
+        }
+        &__width {
+            margin-right: 5px;
+            white-space: nowrap;
+            &:before {
+                content: 'Ш: ';
+            }
+            &::after {
+                content: ",";
+            }
+        }
+        &__height {
+            white-space: nowrap;
+            &:before {
+                content: 'В: ';
+            }
+        }
+        &__length,
+        &__width,
+        &__height {
+            display: flex;
+            align-items: center;
+            &::before {
+                margin-right: 5px;
+            }
+        }
+        &__weight {
+            display: flex;
+            align-items: center;
+        }
+        &__has {
+            margin-top: 8px;
+        }
+        &__price {
+            font-size: 15px;
+        }
+        &__nav {
+            margin-top: 8px;
+        }
+    }
+    .catalog-card2 {
+        &__title,
+        &__price {
+            font-size: 18px;
+        }
+        &__btn {
+            margin-top: 24px;
+        }
+        &__art {
+            margin-left: 30px;
+        }
+    }
+    .contact-card {
+        padding: 24px;
+        &__img {
+            width: 234px;
+            height: 198px;
+            margin-right: 20px;
+        }
+        &__socials-item,
+        &_phone,
+        &__mail,
+        &__days {
+            font-size: 14px;
+        }
+        &__socials-item {
+            svg {
+                width: 16px;
+                height: auto;
+                margin-right: 8px;
+            }
+        }
+    }
+    .search-card {
+        padding: 24px 0;
+        &__img {
+            width: 114px;
+            height: 62px;
+            margin-right: 18px;
+        }
+        &__calc {
+            width: 84px;
+            margin-right: 32px;
+        }
+        &__art {
+            margin-top: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .team-card {
+        &__img {
+            height: 320px;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .news-card {
         &__img {
             height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team-card {
+        &__img {
+            height: 390px;
         }
     }
 }
@@ -342,6 +867,158 @@
             svg {
                 margin-left: 5px;
             }
+        }
+    }
+    .catalog-card {
+        flex-wrap: wrap;
+        padding: 20px;
+        &__info {
+            width: 100%;
+            max-width: unset;
+        }
+        &__has {
+            font-size: 12px;
+            i {
+                margin-right: 6px;
+            }
+        }
+        &__weight,
+        &__size {
+            margin: 20px 0 0;
+            width: 100%;
+            padding-left: 117px;
+            position: relative;
+            &:before {
+                content: 'Размеры, мм';
+                position: absolute;
+                z-index: 1;
+                font-size: 14px;
+                color: $grey;
+                left: 0;
+                width: 117px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        &__length,
+        &__width {
+            &::before {
+                display: none;
+            }
+            &::after {
+                content: " х ";
+                margin-left: 5px;
+            }
+        }
+        &__height {
+            &::before {
+                display: none;
+            }
+        }
+        &__weight {
+            margin-top: 7px;
+            &::before {
+                content: "Вес, кг";
+            }
+        }
+        &__action {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        &__nav {
+            flex-grow: 1;
+            margin: 0 0 0 23px;
+            max-width: 163px;
+        }
+    }
+    .catalog-card2 {
+        padding: 12px 20px 28px;
+    }
+    .contact-card {
+        padding: 40px 32px;
+        display: block;
+        &__img {
+            width: 100%;
+            height: unset;
+            margin: 0 0 32px;
+        }
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+    .team-card {
+        &__img {
+            height: 330px;
+        }
+        &__prof {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        &__name {
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        &__items {
+            margin-top: 16.5px;
+            padding-top: 16.5px;
+            &::before {
+                width: 60px;
+            }
+        }
+        &__item {
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+    .search-card {
+        flex-wrap: wrap;
+        &__img {
+            margin-right: 20px;
+        }
+        &__info {
+            width: calc(100% - 134px);
+        }
+        &__calc {
+            display: none;
+        }
+        &__action {
+            width: 100%;
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+        }
+        &__nav {
+            flex-grow: 1;
+            margin: 0 0 0 23px;
+            max-width: 163px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .search-card {
+        align-items: unset;
+        &__img {
+            width: 65px;
+            height: 40px;
+        }
+        &__info {
+            width: calc(100% - 85px);
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .catalog-card {
+        padding: 12px;
+        &__nav {
+            margin-left: 12px;
+        }
+        &__size {
+            margin-top: 12px;
         }
     }
 }

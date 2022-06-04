@@ -1,0 +1,32 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Каталог", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+            @@include('components/page-blocks/_breadcrumbs.html',{"second":"Каталог","third":"Общегражданское и промышленное строительство","fourth":"Плиты перекрытия"})
+
+            <section class='popular-category'>
+                <div class='container'>
+                    <div class="popular-category__inner">
+                        <h1 class="popular-category__title display1">Плиты перекрытия ПК</h1>
+                        <div class="popular-category__img">
+                            <img src="img/product2.webp" alt="">
+                        </div>
+                        <div class="popular-category__desc popular-category__desc--100">Железобетонные плиты перекрытия изготавливаются в соответствии с требованиями ГОСТ. По особенностям конструкции изделия подразделяются на полнотелые (П, ПТ, ПТП), пустотные (ПК и ПБ), с отверстием (ПО). Доставляем по всей России.</div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('components/catalog/_layout.html')
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

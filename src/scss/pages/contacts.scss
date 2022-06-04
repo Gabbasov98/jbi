@@ -1,0 +1,190 @@
+@import "../vars.scss";
+.contacts {
+    padding: 40px 0 70px;
+    &__inner {
+        display: flex;
+        margin-top: 48px;
+    }
+    &__left {
+        width: 360px;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+    &__right {
+        flex-grow: 1;
+    }
+}
+
+.contacts-info {
+    background-color: $grey3;
+    padding: 40px 32px;
+    position: sticky;
+    top: 10px;
+    &__phone {
+        margin-top: 20px;
+        &-hint {
+            font-size: 12px;
+            line-height: 120%;
+            margin-top: 2px;
+            color: $grey;
+        }
+    }
+    &__socials {
+        margin-top: 32px;
+        &-item {
+            display: flex;
+            align-items: center;
+            line-height: 140%;
+            svg {
+                margin-right: 12px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &:hover {
+                color: $black;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__hint {
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 20px;
+    }
+    &__btn {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+        margin-top: 32px;
+    }
+}
+
+.team {
+    padding: 70px 0;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 80px 20px;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .team {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        padding-bottom: 50px;
+        &__inner {
+            display: block;
+            margin-top: 40px;
+        }
+        &__left {
+            width: 100%;
+            margin: 0 0 32px;
+        }
+    }
+    .contacts-info {
+        position: relative;
+        &__phone {
+            margin-top: 32px;
+        }
+        &__hint {
+            @media screen and (min-width: 800px) {
+                position: absolute;
+                left: 217px;
+                top: 94px;
+                margin: 0;
+                max-width: 144px;
+            }
+        }
+        &__socials {
+            margin-top: 20px;
+            @media screen and (min-width: 800px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                &-item {
+                    margin: 0 !important;
+                }
+            }
+        }
+        &__btn {
+            padding: 0;
+            @media screen and (min-width: 800px) {
+                width: 186px;
+            }
+        }
+    }
+    .team {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+            gap: 60px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contacts {
+        padding-top: 28px;
+        &__inner {
+            margin-top: 32px;
+        }
+    }
+    .contacts-info {
+        &__btn {
+            margin-top: 20px;
+        }
+    }
+    .team {
+        overflow: hidden;
+        &__items {
+            display: flex;
+            gap: unset;
+        }
+        &__slider {
+            position: relative;
+        }
+        .swiper {
+            &-wrapper {
+                display: flex;
+                gap: unset;
+                align-items: stretch;
+            }
+            &-slide {
+                width: 290px;
+                height: auto;
+            }
+            &-button {
+                &-next,
+                &-prev {
+                    top: 147px;
+                    transform: unset;
+                    margin: 0;
+                }
+                &-next {
+                    right: 0;
+                }
+                &-prev {
+                    left: 0;
+                }
+            }
+        }
+        .swiper-button-disabled {
+            opacity: 0;
+        }
+    }
+}

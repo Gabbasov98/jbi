@@ -1,6 +1,30 @@
 $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 9999999', { autoclear: false }, { placeholder: '+7            ' });
 
+
+    // $('.gallery-group').magnificPopup({
+    //     delegate: 'a',
+    //     type: 'image'
+    // });
+
+    $('.popup-youtube, .popup-video, .popup-maps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        preloader: true,
+    });
+
+
+
+    $('.gallery-group').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    });
+
     cartCalc()
 
 
@@ -26,10 +50,48 @@ $(document).ready(function() {
     })
 
 
+    $(".custom-select input").click(function() {
+        $(this).parents(".custom-select").addClass("custom-select--active")
+    })
 
+    $(".custom-select").each(function(index, el) {
+        setSelect($(el))
+    });
+
+    $(".custom-select__item").click(function() {
+        $(this).siblings(".custom-select__item").removeClass("custom-select__item--selected")
+        $(this).addClass("custom-select__item--selected")
+
+        setSelect($(this).parents(".custom-select"))
+    })
+
+    $(document).mouseup(function(e) {
+        var div = $('.custom-select__dropdown');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            if ($(div).parents(".custom-select").hasClass("custom-select--active")) {
+                $(div).parents(".custom-select").removeClass("custom-select--active")
+            }
+        }
+    });
+
+    $(".tab").click(function() {
+        let parent = $(this).parents(".tab-parent")
+        let path = $(this).attr("data-tabs-path")
+        $(parent).find(".tab").removeClass("tab--active")
+        $(this).addClass("tab--active")
+
+        $(parent).find(".tabs-content").removeClass("tabs-content--active")
+        $(parent).find(`.tabs-content[data-tabs-path="${path}"]`).addClass("tabs-content--active")
+    })
 
 });
 
+function setSelect(el) {
+    let selected = $(el).find(".custom-select__item--selected").html()
+    let input = $(el).children("input")
+    $(input).val(selected)
+    $(el).removeClass("custom-select--active")
+}
 
 function dragFile(dropZone) {
 

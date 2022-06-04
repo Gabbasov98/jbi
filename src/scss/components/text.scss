@@ -83,6 +83,10 @@ ol {
     }
 }
 
+.grey-text {
+    color: $grey;
+}
+
 @media screen and (max-width: 1200px) {
     .display1 {
         font-size: 42px;

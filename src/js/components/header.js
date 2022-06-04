@@ -117,5 +117,20 @@ $(document).ready(function() {
         $(`.submenu__items`).removeClass("submenu__items--active")
     })
 
+    $(".header__search input").on("input", function() {
+        let val = $(this).val()
+        if (val.length > 0) {
+            $(".header-search").addClass("header-search--active")
+            $("body").addClass("fixed-body")
+        } else {
+            $(".header-search").removeClass("header-search--active")
+            $("body").removeClass("fixed-body")
+        }
+    })
+
+    $(".header__search .search-block__reset").click(function() {
+        $(".header-search").removeClass("header-search--active")
+        $("body").removeClass("fixed-body")
+    })
 
 })

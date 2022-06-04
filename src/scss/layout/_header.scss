@@ -148,6 +148,12 @@
             &::before {
                 display: none;
             }
+            &.active {
+                a {
+                    color: $black;
+                    border-bottom: 1px solid $black;
+                }
+            }
         }
     }
     li {
@@ -160,9 +166,10 @@
         color: $grey;
         display: inline-block;
         font-size: 14px;
+        border-bottom: 1px solid transparent;
         &:hover {
-            text-decoration-line: underline;
             color: $black;
+            border-color: $black;
         }
     }
     .knob {
