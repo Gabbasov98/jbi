@@ -84,6 +84,10 @@ $(document).ready(function() {
         $(parent).find(`.tabs-content[data-tabs-path="${path}"]`).addClass("tabs-content--active")
     })
 
+
+    $(".cookies__btn").click(function() {
+        $(this).parents(".cookies").remove()
+    })
 });
 
 function setSelect(el) {
