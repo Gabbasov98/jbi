@@ -15,11 +15,15 @@ $(document).ready(function() {
 
     if (window.innerWidth < 800) {
         requisitSlider()
+    } else {
+        requisitSlider = ''
     }
 
     $(window).resize(function() {
         if (window.innerWidth < 800) {
             requisitSlider()
+        } else {
+            requisitSlider = ''
         }
     })
 

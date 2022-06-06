@@ -126,6 +126,11 @@
         display: flex;
         align-items: center;
         top: 0;
+        &:hover {
+            path {
+                fill: $primaryHover;
+            }
+        }
         &--prev {
             left: 75px;
         }
@@ -173,7 +178,7 @@
             stroke: $black;
         }
     }
-    @media screen and (max-width: 80px) {
+    @media screen and (max-width: 800px) {
         right: 20px;
         bottom: 20px;
         width: 40px;

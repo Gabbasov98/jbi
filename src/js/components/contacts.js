@@ -13,11 +13,15 @@ $(document).ready(function() {
 
     if (window.innerWidth < 800) {
         teamSlider()
+    } else {
+        teamSlider = ''
     }
 
     $(window).resize(function() {
         if (window.innerWidth < 800) {
             teamSlider()
+        } else {
+            teamSlider = ''
         }
     })
 })

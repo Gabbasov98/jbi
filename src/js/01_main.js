@@ -2,10 +2,9 @@ $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 9999999', { autoclear: false }, { placeholder: '+7            ' });
 
 
-    // $('.gallery-group').magnificPopup({
-    //     delegate: 'a',
-    //     type: 'image'
-    // });
+    $('.image-popup').magnificPopup({
+        type: 'image'
+    });
 
     $('.popup-youtube, .popup-video, .popup-maps').magnificPopup({
         type: 'iframe',

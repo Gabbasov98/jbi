@@ -604,7 +604,7 @@
         }
     }
     .mobs-filter {
-        align-items: flex-start;
+        align-items: unset;
         order: -1;
         &__left {
             display: block;

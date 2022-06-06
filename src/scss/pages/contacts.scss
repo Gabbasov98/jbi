@@ -75,6 +75,16 @@
         gap: 80px 20px;
         margin-top: 32px;
     }
+    .swiper {
+        &-button {
+            &-next,
+            &-prev {
+                @media screen and (min-width: 800px) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1350px) {

@@ -121,7 +121,8 @@
         }
     }
     &--dark {
-        input {
+        input,
+        textarea {
             border-color: $grey;
             color: #fff;
             &.input-active,
@@ -436,6 +437,12 @@
                 width: 10px;
                 height: 10px;
             }
+        }
+    }
+    .form-group {
+        input,
+        textarea {
+            font-size: 14px;
         }
     }
 }

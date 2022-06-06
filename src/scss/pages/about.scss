@@ -47,6 +47,9 @@
     }
     .finish-projects {
         padding: 50px 0;
+        &__map {
+            height: 300px;
+        }
     }
 }
 
@@ -54,6 +57,11 @@
     .about {
         &__title {
             margin-bottom: 20px;
+        }
+    }
+    .finish-projects {
+        &__map {
+            height: 280px;
         }
     }
 }

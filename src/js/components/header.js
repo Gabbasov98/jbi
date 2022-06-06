@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     if (window.innerWidth > 1200) {
         var nav = priorityNav.init();
+    } else {
+        nav = ""
     }
     if (window.innerWidth < 800) {
         $(".header .search-block input").attr("placeholder", "Поиск товаров")
@@ -15,7 +17,11 @@ $(document).ready(function() {
     $(window).resize(function() {
         if (window.innerWidth > 1200) {
             var nav = priorityNav.init();
+        } else {
+            nav = ""
         }
+
+
         if (window.innerWidth < 800) {
             $(".search-block input").attr("placeholder", "Поиск товаров")
         } else {

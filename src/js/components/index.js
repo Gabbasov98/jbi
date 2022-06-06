@@ -25,12 +25,18 @@ $(document).ready(function() {
     if (window.innerWidth < 800) {
         doneSlider()
         newsSlider()
+    } else {
+        doneSlider = ''
+        newsSlider = ''
     }
 
     $(window).resize(function() {
         if (window.innerWidth < 800) {
             doneSlider()
             newsSlider()
+        } else {
+            doneSlider = ''
+            newsSlider = ''
         }
     })
 
