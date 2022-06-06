@@ -310,6 +310,14 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
         }
+        &-button {
+            &-next,
+            &-prev {
+                @media screen and (min-width: 800px) {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -379,6 +387,14 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
+        }
+        &-button {
+            &-next,
+            &-prev {
+                @media screen and (min-width: 800px) {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -665,6 +681,9 @@
     }
     .info {
         padding: 50px 0;
+        &__right {
+            padding: 0;
+        }
         &__subtitle {
             margin: 40px 0 10px;
             font-size: 18px;

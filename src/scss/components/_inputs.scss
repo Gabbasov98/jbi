@@ -134,7 +134,8 @@
     }
 }
 
-.check {
+.check,
+.radio {
     position: relative;
     min-height: 23px;
     display: flex;
@@ -190,6 +191,38 @@
             text-decoration: underline;
             position: relative;
             z-index: 3;
+        }
+    }
+}
+
+.radio {
+    & input:checked+label {
+        &::before {
+            background-image: none;
+        }
+        &::after {
+            opacity: 1;
+        }
+    }
+    label {
+        font-size: 18px;
+        &::before {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 12px;
+            height: 12px;
+            left: 9px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $black;
+            border-radius: 50%;
+            opacity: 0;
         }
     }
 }
@@ -389,6 +422,20 @@
         }
         &__arrow {
             right: 12px;
+        }
+    }
+    .radio {
+        label {
+            font-size: 15px;
+            &::before {
+                width: 24px;
+                height: 24px;
+            }
+            &::after {
+                left: 8px;
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 }

@@ -5,9 +5,9 @@ $(document).ready(function() {
         var nav = priorityNav.init();
     }
     if (window.innerWidth < 800) {
-        $(".search-block input").attr("placeholder", "Поиск товаров")
+        $(".header .search-block input").attr("placeholder", "Поиск товаров")
     } else {
-        $(".search-block input").attr("placeholder", "Введите название или артикул товара")
+        $(".header .search-block input").attr("placeholder", "Введите название или артикул товара")
     }
 
 

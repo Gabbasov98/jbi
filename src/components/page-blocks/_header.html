@@ -1,4 +1,4 @@
-<header class="header">
+<header id="header" class="header">
     <section class='header-top'>
         <div class='container'>
             <div class='header-top__inner'>
@@ -76,7 +76,7 @@
                         <path d="M13 13L1 13" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </button>
-                <a href="" class="header__logo">
+                <a href="index.html" class="header__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
                 <button class="header__call">
@@ -90,7 +90,7 @@
                 </button>
 
                 <form class="search-block header__search form-group">
-                    @@include('../ui/_search-block.html')
+                    <input type="text" placeholder="Введите название или артикул товара"> @@include('../ui/_search-block.html')
                 </form>
 
                 <a href="" class="header__estimate" data-num="24">

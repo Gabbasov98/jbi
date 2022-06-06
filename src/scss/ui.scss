@@ -1,5 +1,39 @@
 @import 'vars';
 @import 'components/fonts.scss';
+.loader {
+    position: relative;
+    display: flex;
+    span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $primary;
+        margin: 0 4px;
+        &:nth-child(1) {
+            animation: bounce 1s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+            animation: bounce 1s ease-in-out 0.33s infinite;
+        }
+        &:nth-child(3) {
+            animation: bounce 1s ease-in-out 0.66s infinite;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%,
+    75%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-7px);
+        opacity: 0.2;
+    }
+}
+
 .search-block {
     position: relative;
     margin: 0;
@@ -37,6 +71,13 @@
                 stroke: $primary;
             }
         }
+    }
+    &__loader {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 8px;
     }
 }
 
@@ -108,6 +149,43 @@
             color: $black;
             pointer-events: none;
         }
+    }
+}
+
+.scroll-up {
+    z-index: 22;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: $primaryHover;
+        border-color: $primaryHover;
+        path {
+            stroke: $black;
+        }
+    }
+    @media screen and (max-width: 80px) {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        svg {
+            width: 18px;
+            height: auto;
+        }
+    }
+    &--active {
+        visibility: visible;
+        opacity: 1;
     }
 }
 

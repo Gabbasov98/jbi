@@ -88,6 +88,16 @@ $(document).ready(function() {
     $(".cookies__btn").click(function() {
         $(this).parents(".cookies").remove()
     })
+
+    $(".share-modal__link").click(function() {
+        let el = $(this).find("span")
+        var $tmp = $("<textarea>");
+        $("body").append($tmp);
+        $tmp.val($(el).text()).select();
+        document.execCommand("copy");
+        $tmp.remove();
+    })
+
 });
 
 function setSelect(el) {

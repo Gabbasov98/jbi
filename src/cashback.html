@@ -1,0 +1,146 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Кэшбек за заказы", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+            @@include('components/page-blocks/_breadcrumbs.html',{"second":"Кэшбек за заказы","third":"","fourth":""})
+
+            <section class='cashback'>
+                <div class='container'>
+                    <div class='cashback__top'>
+                        <div class="cashback__title display1">Кэшбек за заказы</div>
+                        <div class="cashback__desc">Запустили акцию — подарки за заказы. При оплате на опредленную сумму, отправим в любую точку России презент от нашей компании. Виды подарков меняются каждые 2-3 месяца. </div>
+                        <form action="" class="cashback__form">
+                            <fieldset class='cashback__form-group form-group'>
+                                <input type='text' placeholder="Введите сумму всех счетов для расчета подарка" />
+                            </fieldset>
+                            <button class="cashback__btn btn btn-yellow">Подобрать подарок</button>
+                        </form>
+                    </div>
+
+                    <div class="cashback__tabs cashback__tabs--hide">
+                        <div class="cashback__tab cashback__tab--active">100 000 – 600 000 ₽</div>
+                        <div class="cashback__tab">600 000 – 1 400 000 ₽</div>
+                        <div class="cashback__tab">1 400 000 – 2 200 000 ₽</div>
+                        <div class="cashback__tab">2 200 000 – 3 000 000 ₽</div>
+                        <div class="cashback__tab">3 000 000 – 3 800 000 ₽</div>
+                        <div class="cashback__tab">3 800 000 – 4 600 000 ₽</div>
+                        <div class="cashback__tab">4 600 000 – 5 400 000 ₽</div>
+                        <div class="cashback__tab">5 400 000 – 6 000 000 ₽</div>
+                        <div class="cashback__tab">6 000 000 – 7 000 000 ₽</div>
+                        <div class="cashback__tab">7 000 000 – 8 000 000 ₽</div>
+                        <div class="cashback__tab">8 200 000 ₽</div>
+                        <div class="cashback__tab">40 000 000 ₽</div>
+                        <button class="cashback__tab-more">
+                            <span>Показать ещё</span>
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.5L6 5.5L11 0.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="cashback__items">
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Наушники накладные Bluetooth JBL</div>
+                        </div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback2.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Фитнес-браслет Xiaomi</div>
+                        </div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback3.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Электронная книга</div>
+                        </div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback4.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Абонемент в тренажёрный зал (в вашем городе)</div>
+                        </div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback5.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Соковыжималка</div>
+                        </div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-img">
+                                <img src="img/cashback6.webp" alt="">
+                            </div>
+                            <div class="cashback__item-title display3">Кофемашина</div>
+                        </div>
+                    </div>
+
+                    <div class="cashback__hint">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16345 0 16 0C24.8366 0 32 7.16344 32 16ZM14.9333 10.6666V8.51198H17.0667V10.6666H14.9333ZM17.0667 14.9333V21.3333H19.2V23.4666H12.8V21.3333H14.9333V17.0666H12.8V14.9333H17.0667Z" fill="#333333"/>
+                        </svg>
+                        <span>Отправка осуществляется после отгрузки товара в течение 5 дней.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class='prize'>
+                <div class='container'>
+                    <div class='prize__top display2'>
+                        <span>Мы отправили уже</span>
+                        <div class="prize__nums" data-num="58"></div>
+                        <span>подарков</span>
+                    </div>
+
+                    <div class="prize__items gallery-group">
+                        <a href="img/prize.jpg" class="prize__item prize__item--big">
+                            <img src="img/prize.jpg" alt="">
+                            <div class="prize__item-title display3">Мойка высокого давления KARCHER K3</div>
+                        </a>
+                        <a href="img/prize2.jpg" class="prize__item prize__item--big">
+                            <img src="img/prize2.jpg" alt="">
+                            <div class="prize__item-title display3">Кофемашина капсульная BORK C830 Nespresso Creatista</div>
+                        </a>
+                        <a href="img/prize3.jpg" class="prize__item">
+                            <img src="img/prize3.jpg" alt="">
+                            <div class="prize__item-title display3">Например наручные часы, это просто текст на 2 строки</div>
+                        </a>
+                        <a href="img/prize4.jpg" class="prize__item">
+                            <img src="img/prize4.jpg" alt="">
+                            <div class="prize__item-title display3">Робот-пылесос или супер длинный текст на 3 строки на фотографии с уже подаренным подарком</div>
+                        </a>
+                        <a href="img/prize5.jpg" class="prize__item">
+                            <img src="img/prize5.jpg" alt="">
+                            <div class="prize__item-title display3">Описание подарка в 1 строку</div>
+                        </a>
+                        <a href="img/prize3.jpg" class="prize__item">
+                            <img src="img/prize3.jpg" alt="">
+                            <div class="prize__item-title display3">Например наручные часы, это просто текст на 2 строки</div>
+                        </a>
+                        <a href="img/prize4.jpg" class="prize__item">
+                            <img src="img/prize4.jpg" alt="">
+                            <div class="prize__item-title display3">Робот-пылесос или супер длинный текст на 3 строки на фотографии с уже подаренным подарком</div>
+                        </a>
+                        <a href="img/prize5.jpg" class="prize__item">
+                            <img src="img/prize5.jpg" alt="">
+                            <div class="prize__item-title display3">Описание подарка в 1 строку</div>
+                        </a>
+                    </div>
+
+                    <button class="prize__btn btn btn-yellow">Показать еще </button>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

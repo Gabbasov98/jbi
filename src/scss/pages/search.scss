@@ -1,0 +1,58 @@
+.search-empty {
+    padding: 40px 0 70px;
+    &__title {
+        max-width: 995px;
+    }
+}
+
+.search {
+    padding: 40px 0 70px;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__content {
+        flex-grow: 1;
+    }
+    &__sidebar {
+        width: 360px;
+        flex-shrink: 0;
+        margin-left: 20px;
+    }
+    &__subtitle {
+        margin: 64px 0 32px;
+    }
+    .search-card {
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+    .article-consult {
+        position: sticky;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .search-empty {
+        padding-bottom: 0px;
+    }
+    .search {
+        padding-bottom: 50px;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__subtitle {
+            margin: 24px 0;
+        }
+        &__inner {
+            display: block;
+        }
+        &__sidebar {
+            width: 100%;
+            margin: 32px 0 0;
+        }
+    }
+}

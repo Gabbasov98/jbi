@@ -1,0 +1,322 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Смета", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+            @@include('components/page-blocks/_breadcrumbs.html',{"second":"Смета","third":"","fourth":""})
+
+            <section class='estimate'>
+                <div class='container'>
+                    <div class='estimate__top'>
+                        <h1 class="estimate__title display1">Смета</h1>
+                        <div class="estimate__buttons">
+                            <button class="estimate__button" data-bs-toggle="modal" data-bs-target="#share">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.58984 13.5098L15.4198 17.4898" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.4098 6.50977L8.58984 10.4898" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <a href="" class="estimate__button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9V2H18V9" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 14H6V22H18V14Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="search-block estimate__search form-group">
+                        <input type="text" placeholder="Быстрое добавление: Введите название или артикул товара"> @@include('components/ui/_search-block.html')
+                        <div class="estimate__search-results">
+                            <div class="estimate__search-items">
+                                <div class="search-card2 search-card">
+                                    @@include('components/cards/_search-card2.html')
+                                </div>
+                                <div class="search-card2 search-card">
+                                    @@include('components/cards/_search-card2.html')
+                                </div>
+                                <div class="search-card2 search-card">
+                                    @@include('components/cards/_search-card2.html')
+                                </div>
+                                <div class="search-card2 search-card">
+                                    @@include('components/cards/_search-card2.html')
+                                </div>
+                                <div class="search-card2 search-card">
+                                    @@include('components/cards/_search-card2.html')
+                                </div>
+                            </div>
+                            <a href="" class="estimate__search-btn btn btn-yellow">Посмотреть все результаты</a>
+                        </div>
+                    </form>
+
+                    <div class="estimate__nav">
+                        <div class="estimate__all check">
+                            <input checked type='checkbox' />
+                            <label>Выделить все</label>
+                        </div>
+                        <button class="estimate__delete">
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1.5L1 12.5" stroke="#939393" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 1.5L12 12.5" stroke="#939393" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Удалить выбранное</span>
+                        </button>
+                    </div>
+
+                    <div class="estimate__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>№</th>
+                                    <th>Наименование</th>
+                                    <th>Поставщик</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th>Сумма</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="estimate-card">
+                                    <td>
+                                        <div class="estimate__check check">
+                                            <input checked type='checkbox' />
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="estimate-card__info">
+                                            <div class="estimate-card__img">
+                                                <img src="img/estimate2.webp" alt="">
+                                            </div>
+                                            <div class="estimate-card__content">
+                                                <a href="" class="estimate-card__tag">плиты перекрытия и например очень длинноеплиты перекрытия и например очень длинное dffffffffff</a>
+                                                <a href="" class="estimate-card__title display3">ПК 24-10-8</a>
+                                                <div class="estimate-card__art">арт. 1568710135</div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="estimate-card__storage">
+                                            <div class="estimate-card__storage-title">Склад №125978</div>
+                                            <div class="estimate-card__has">
+                                                <i></i>
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="estimate-card__price">
+                                            <div class="estimate-card__price-num">19 864,10 р.</div>
+                                            <div class="estimate-card__price-hint">
+                                                <span>цена обновлена:</span> 05.02.2022
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @@include('components/ui/_cartcalc.html',{"class":"estimate-card__calc"})
+                                    </td>
+                                    <td>
+                                        <div class="estimate-card__sum">39 728,2 р.</div>
+                                    </td>
+                                    <td>
+                                        <button class="estimate-card__delete">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.7071 1.70711C18.0976 1.31658 18.0976 0.683417 17.7071 0.292893C17.3166 -0.0976311 16.6834 -0.0976311 16.2929 0.292893L17.7071 1.70711ZM0.292893 16.2929C-0.0976311 16.6834 -0.0976311 17.3166 0.292893 17.7071C0.683417 18.0976 1.31658 18.0976 1.70711 17.7071L0.292893 16.2929ZM16.2929 0.292893L0.292893 16.2929L1.70711 17.7071L17.7071 1.70711L16.2929 0.292893Z" fill="#333333"/>
+                                                <path d="M0.292892 1.70711C-0.0976315 1.31658 -0.0976315 0.683417 0.292892 0.292893C0.683416 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L0.292892 1.70711ZM17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L17.7071 16.2929ZM1.70711 0.292893L17.7071 16.2929L16.2929 17.7071L0.292892 1.70711L1.70711 0.292893Z" fill="#333333"/>
+                                            </svg>
+                                        </button>
+
+                                        <div class="estimate-card__delete-mode">
+                                            <div class="estimate-card__delete-title">
+                                                Товар МШЛ-0.35 будет удален через
+                                                <span class="estimate-card__sec">3 секунды</span>
+                                            </div>
+                                            <button class="estimate-card__delete-btn text-link">Вернуть</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="estimate-card">
+                                    <td>
+                                        <div class="estimate__check check">
+                                            <input checked type='checkbox' />
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="estimate-card__info">
+                                            <div class="estimate-card__img">
+                                                <img src="img/estimate3.webp" alt="">
+                                            </div>
+                                            <div class="estimate-card__content">
+                                                <a href="" class="estimate-card__tag">Ригели ЖД платформ </a>
+                                                <a href="" class="estimate-card__title display3">МШЛ-0.35</a>
+                                                <div class="estimate-card__art">арт. 576878</div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="estimate-card__storage">
+                                            <div class="estimate-card__storage-title">Склад №578</div>
+                                            <div class="estimate-card__has">
+                                                <i></i>
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="estimate-card__price">
+                                            <div class="estimate-card__price-num">27 568,58 р.</div>
+                                            <div class="estimate-card__price-hint">
+                                                <span>цена обновлена:</span> 05.02.2022
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @@include('components/ui/_cartcalc.html',{"class":"estimate-card__calc"})
+                                    </td>
+                                    <td>
+                                        <div class="estimate-card__sum">27 568,58 р.</div>
+                                    </td>
+                                    <td>
+                                        <button class="estimate-card__delete">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.7071 1.70711C18.0976 1.31658 18.0976 0.683417 17.7071 0.292893C17.3166 -0.0976311 16.6834 -0.0976311 16.2929 0.292893L17.7071 1.70711ZM0.292893 16.2929C-0.0976311 16.6834 -0.0976311 17.3166 0.292893 17.7071C0.683417 18.0976 1.31658 18.0976 1.70711 17.7071L0.292893 16.2929ZM16.2929 0.292893L0.292893 16.2929L1.70711 17.7071L17.7071 1.70711L16.2929 0.292893Z" fill="#333333"/>
+                                                <path d="M0.292892 1.70711C-0.0976315 1.31658 -0.0976315 0.683417 0.292892 0.292893C0.683416 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L0.292892 1.70711ZM17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L17.7071 16.2929ZM1.70711 0.292893L17.7071 16.2929L16.2929 17.7071L0.292892 1.70711L1.70711 0.292893Z" fill="#333333"/>
+                                            </svg>
+                                        </button>
+
+                                        <div class="estimate-card__delete-mode">
+                                            <div class="estimate-card__delete-title">
+                                                Товар МШЛ-0.35 будет удален через
+                                                <span class="estimate-card__sec">3 секунды</span>
+                                            </div>
+                                            <button class="estimate-card__delete-btn text-link">Вернуть</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class='order'>
+                <div class='container'>
+                    <div class='order__inner'>
+                        <div class="order__title display2">Оформление заказа</div>
+                        <form class="order__form">
+                            <div class="order__left">
+                                <div class="order__form-grid">
+                                    <fieldset class='order__form-group form-group'>
+                                        @@include('components/ui/_input.html',{"type":"text","label":"ФИО"})
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        @@include('components/ui/_input.html',{"type":"text","label":"ИНН организации"})
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        @@include('components/ui/_input.html',{"type":"tel","label":"Телефон"})
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        @@include('components/ui/_input.html',{"type":"email","label":"Почта"})
+                                    </fieldset>
+                                </div>
+
+                                <div class="order__delivery">
+                                    <div class="order__subtitle display3">Способ получения</div>
+                                    <div class="order__delivery-ways">
+                                        <div class="order__delivery-way radio">
+                                            <input checked type='radio' name='delivery' data-delivery="1" />
+                                            <label>Доставка в Екатеринбург</label>
+                                        </div>
+                                        <div class="order__delivery-way radio">
+                                            <input type='radio' name='delivery' data-delivery="2" />
+                                            <label>Самовывоз</label>
+                                        </div>
+                                    </div>
+                                    <fieldset class='order__delivery-input form-group'>
+                                        @@include('components/ui/_input.html',{"type":"text","label":"ИНН организации"})
+                                    </fieldset>
+                                </div>
+
+                                <div class="order__correction">
+                                    <div class="order__subtitle display3">
+                                        Уточнения
+                                        <span>(необязательно)</span>
+                                    </div>
+                                    <div class="order__file file-input">
+                                        <div class="file-input__drop-area">
+                                            <input type="file">
+                                            <label>
+                                                <span>
+                                                    Прикрепить файлы
+                                                </span>
+                                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.69057 3.52957L9.69057 12.9883C9.69057 14.147 9.23025 15.2583 8.41088 16.0777C7.59151 16.8971 6.48021 17.3574 5.32145 17.3574C4.16268 17.3574 3.05138 16.8971 2.23201 16.0777C1.41264 15.2583 0.952324 14.147 0.952324 12.9883L0.952323 3.52957C0.952323 2.75706 1.2592 2.01619 1.80545 1.46994C2.35169 0.923697 3.09256 0.616819 3.86507 0.616819C4.63758 0.616819 5.37845 0.923696 5.9247 1.46994C6.47094 2.01619 6.77782 2.75706 6.77782 3.52957L6.77267 12.9934C6.77267 13.3797 6.61923 13.7501 6.34611 14.0232C6.07299 14.2964 5.70255 14.4498 5.3163 14.4498C4.93005 14.4498 4.55961 14.2964 4.28649 14.0232C4.01336 13.7501 3.85993 13.3797 3.85993 12.9934L3.86507 4.26033" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        @@include('components/ui/_file-input-components.html')
+                                    </div>
+                                </div>
+
+                                <button type="button" class="order__comment">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 1V14" stroke="#333333" stroke-linecap="round"/>
+                                        <path d="M1 7.5L14 7.5" stroke="#333333" stroke-linecap="round"/>
+                                    </svg>
+                                    <span>Комменатрий к заказу</span>
+                                </button>
+                            </div>
+                            <div class="order__right">
+                                <div class="order-info">
+                                    <div class="order-info__items">
+                                        <div class="order-info__item">
+                                            <span class="order-info__item-title">Количество товаров</span>
+                                            <span class="order-info__item-desc">3 шт</span>
+                                        </div>
+                                        <div class="order-info__item">
+                                            <span class="order-info__item-title">Вес</span>
+                                            <span class="order-info__item-desc">0,57 т</span>
+                                        </div>
+                                        <div class="order-info__item">
+                                            <span class="order-info__item-title">НДС</span>
+                                            <span class="order-info__item-desc">20%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-info__hint">Стоимость доставки считается логистом после отправки заказа.</div>
+                                    <div class="order-info__all display2">
+                                        <span>Итого</span>
+                                        <span>67 296,78 р.</span>
+                                    </div>
+
+                                    <button class="order-info__btn btn btn-yellow">Оформить заказ</button>
+                                    <div class="order-info__hint2">
+                                        Нажимая на кнопку «Оформить заказ», вы принимаете условия Публичной оферты и <a href="">Политику обработки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,754 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+.estimate {
+    padding: 40px 0 70px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        margin-left: 24px;
+        &:hover {
+            path {
+                stroke: $primaryHover;
+            }
+        }
+    }
+    &__search {
+        margin-top: 32px;
+        max-width: 867px;
+        input {
+            height: 65px;
+            font-size: 18px;
+        }
+        &-results {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            margin-top: 12px;
+            background-color: #fff;
+            z-index: 10;
+            border-radius: 6px;
+            border: 1px solid $grey;
+            padding: 28px 8px 28px 28px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .225s;
+            &--active {
+                opacity: 1;
+                pointer-events: unset;
+            }
+        }
+        &-items {
+            max-height: 633px;
+            overflow-y: auto;
+            @include scroll;
+            padding-right: 14px;
+            padding-bottom: 1px;
+        }
+        &-btn {
+            max-width: 100%;
+            padding: 0;
+            width: 296px;
+            height: 45px;
+            margin: 28px auto 0;
+            font-size: 14px;
+        }
+        .search-card {
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+    }
+    &__all {}
+    &__delete {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 12px;
+        }
+        &:hover {
+            color: $red;
+            path {
+                stroke: $red;
+            }
+        }
+    }
+    .check {
+        label {
+            font-size: 16px;
+            color: $black;
+            &::before {
+                width: 28px;
+                height: 28px;
+                background-size: 14px auto;
+            }
+        }
+    }
+    &__table {
+        margin-top: 62px;
+        table {
+            width: 100%;
+        }
+        tr {
+            position: relative;
+        }
+        th,
+        td {
+            padding-left: 30px;
+            &:first-child {
+                width: 28px;
+                padding: 0;
+            }
+            &:nth-child(7) {
+                width: 200px;
+            }
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+        th {
+            padding-bottom: 32px;
+            font-weight: 600;
+            line-height: 120%;
+            border-bottom: 1px solid $grey2;
+        }
+        td {
+            padding-top: 31px;
+            padding-bottom: 31px;
+            border-bottom: 1px solid $grey2;
+        }
+    }
+    &__check {
+        label {
+            display: flex;
+            align-items: center;
+            height: 28px;
+            padding-left: 8px;
+        }
+    }
+}
+
+.estimate-card {
+    &--delete {
+        .estimate-card__delete-mode {
+            opacity: 1;
+            pointer-events: unset;
+        }
+    }
+    &__info {
+        display: flex;
+    }
+    &__img {
+        width: 180px;
+        flex-shrink: 0;
+        margin-right: 32px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__content {
+        flex-grow: 1;
+        padding-top: 5px;
+    }
+    &__tag {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 50px;
+        background-color: $grey3;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 312px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 120%;
+        &:hover {
+            background-color: $primary;
+            color: $black;
+        }
+    }
+    &__title {
+        margin-top: 20px;
+        display: block;
+    }
+    &__art {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 140%;
+        color: $grey;
+    }
+    &__storage,
+    &__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title {
+            line-height: 140%;
+        }
+    }
+    &__has {
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        font-size: 14px;
+        i {
+            background-color: $green;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: block;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+    }
+    &__price {
+        &-hint {
+            font-size: 14px;
+            line-height: 140%;
+            margin-top: 4px;
+            color: $grey;
+            span {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+    &__calc {
+        width: 104px;
+        input {
+            font-size: 18px;
+        }
+    }
+    &__sum {
+        font-weight: 600;
+        line-height: 120%;
+    }
+    &__delete {
+        &:hover {
+            path {
+                fill: $primaryHover;
+            }
+        }
+        &-mode {
+            z-index: 5;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 2px);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+        }
+        &-btn {
+            margin-left: 32px;
+            color: $grey;
+        }
+    }
+}
+
+.order {
+    padding: 10px 0 70px;
+    &__inner {
+        border: 1px solid $grey2;
+        padding: 64px;
+    }
+    &__form {
+        display: flex;
+        margin-top: 32px;
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        &-group {
+            margin: 0;
+        }
+    }
+    &__left {
+        flex-grow: 1;
+    }
+    &__right {
+        width: 466px;
+        margin-left: 40px;
+        flex-shrink: 0;
+    }
+    &__subtitle {
+        span {
+            color: $grey;
+        }
+    }
+    &__delivery {
+        margin-top: 48px;
+        &-ways {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        &-way {
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+        &-input {
+            margin: 20px 0 0 0;
+        }
+    }
+    &__correction {
+        margin-top: 48px;
+    }
+    &__file {
+        margin-top: 20px;
+        max-width: 423px;
+        .file-input {
+            &__drop-area {
+                height: 54px;
+            }
+        }
+        label {
+            padding: 0 24px;
+            border-style: solid;
+            justify-content: space-between;
+        }
+    }
+    &__comment {
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+        margin-top: 23px;
+        padding-bottom: 2px;
+        border-bottom: 1px dashed $black;
+        font-size: 16px;
+        line-height: 140%;
+        svg {
+            margin-right: 7px;
+        }
+    }
+}
+
+.order-info {
+    background-color: $grey3;
+    padding: 48px 32px;
+    &__item {
+        line-height: 140%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+            width: 100%;
+            bottom: 4px;
+            left: 0;
+        }
+        &-title,
+        &-desc {
+            position: relative;
+            z-index: 2;
+            background-color: $grey3;
+            padding-right: 4px;
+        }
+        &-desc {
+            font-weight: 600;
+            padding: 0 0 0 4px;
+        }
+    }
+    &__hint {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 140%;
+        color: $grey;
+    }
+    &__all {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btn {
+        width: 100%;
+        padding: 0;
+        margin-top: 32px;
+    }
+    &__hint2 {
+        font-size: 12px;
+        line-height: 120%;
+        color: $grey;
+        text-align: center;
+        max-width: 342px;
+        margin: 12px auto 0;
+        a {
+            color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .estimate {
+        &__table {
+            th,
+            td {
+                padding-left: 10px;
+                &:nth-child(7) {
+                    width: 125px;
+                }
+            }
+        }
+        &__search {
+            max-width: 680px;
+        }
+    }
+    .estimate-card {
+        &__info {
+            max-width: 320px;
+        }
+        &__img {
+            margin-right: 24px;
+        }
+        &__tag {
+            max-width: 200px;
+        }
+    }
+    .order {
+        &__inner {
+            padding: 40px 32px;
+        }
+        &__right {
+            margin-left: 20px;
+            width: 443px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .estimate {
+        padding-bottom: 50px;
+        &__nav {
+            margin-top: 48px;
+        }
+        &__delete {
+            margin-left: 50px;
+            font-size: 14px;
+        }
+        &__search {
+            max-width: 100%;
+            input {
+                height: 53px;
+            }
+            &-results {
+                padding: 14px 8px 14px 14px;
+            }
+            &-items {
+                padding-right: 7px;
+                max-height: 450px;
+            }
+        }
+        .check {
+            label {
+                font-size: 14px;
+            }
+        }
+        &__table {
+            margin-top: 40px;
+            table,
+            tbody {
+                display: block;
+            }
+            tr {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                border-bottom: 1px solid $grey2;
+            }
+            thead {
+                display: none;
+            }
+            td {
+                border: none;
+                padding: 0;
+                &:first-child {
+                    width: 28px;
+                    flex-shrink: 0;
+                    margin-bottom: 20px;
+                }
+                &:nth-child(2) {
+                    width: 47px;
+                    flex-shrink: 0;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                &:nth-child(3) {
+                    width: calc(100% - 75px);
+                    margin-bottom: 20px;
+                }
+                &:nth-child(4) {
+                    padding-left: 75px;
+                    width: 245px;
+                    flex-shrink: 0;
+                    margin-right: 35px;
+                }
+                &:nth-child(5) {
+                    width: 130px;
+                }
+                &:nth-child(6) {
+                    margin-left: 35px;
+                }
+                &:nth-child(7) {
+                    flex-grow: 1;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .estimate-card {
+        padding: 28px 0;
+        &:first-child {
+            border-top: 1px solid $grey2;
+        }
+        &__info {
+            max-width: unset;
+        }
+        &__img {
+            width: 170px;
+            margin-right: 32px;
+        }
+        &__content {
+            width: calc(100% - 202px);
+        }
+        &__tag {
+            max-width: 100%;
+        }
+        &__title {
+            margin-top: 16px;
+        }
+        &__art {
+            margin-top: 4px;
+        }
+        &__calc {
+            width: 94px;
+        }
+        &__sum {
+            text-align: center;
+        }
+    }
+    .order {
+        padding: 30px 0 50px;
+        &__form {
+            display: block;
+            margin-top: 24px;
+        }
+        &__right {
+            width: 100%;
+            margin: 60px 0 0 0;
+        }
+    }
+    .order-info {
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__btn {
+            margin-top: 24px;
+        }
+        &__hint {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .estimate {
+        &__search {
+            margin-top: 24px;
+        }
+        &__nav {
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        &__all {
+            label {
+                padding-left: 32px;
+            }
+        }
+        &__delete {
+            margin-left: 0;
+        }
+        .check {
+            label {
+                height: 24px;
+                &::before {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &__table {
+            margin-top: 32px;
+            tr {
+                align-items: unset;
+                padding: 24px 0 12px;
+            }
+            td {
+                &:nth-child(1) {
+                    width: 32px;
+                    margin-bottom: 16px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    width: calc(100% - 32px);
+                    margin-bottom: 16px;
+                }
+                &:nth-child(4) {
+                    width: 142px;
+                    padding: 0;
+                    margin: 0 0 12px;
+                }
+                &:nth-child(5) {
+                    width: calc(100% - 142px);
+                    margin-bottom: 12px;
+                }
+                &:nth-child(6) {
+                    margin-left: 0;
+                }
+                &:nth-child(7) {
+                    justify-content: center;
+                }
+                &:nth-child(7),
+                &:nth-child(8) {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .estimate-card {
+        &__img {
+            width: 98px;
+            margin-right: 12px;
+        }
+        &__content {
+            padding: 0;
+        }
+        &__title {
+            margin-top: 8px;
+            font-size: 15px;
+        }
+        &__price {
+            &-hint {
+                span {
+                    display: none;
+                }
+                &:before {
+                    content: 'от';
+                }
+            }
+        }
+        &__calc {
+            height: 45px;
+        }
+        &__delete {
+            svg {
+                width: 12px;
+                height: auto;
+            }
+        }
+    }
+    .order {
+        padding-top: 10px;
+        &__inner {
+            padding: 0;
+            border: none;
+        }
+        &__form {
+            margin-top: 20px;
+            &-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+        &__delivery {
+            margin-top: 32px;
+            position: relative;
+            padding-bottom: 40px;
+            &-ways {
+                margin-top: 16px;
+            }
+            &-way {
+                &:nth-child(2) {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            &-input {
+                margin-top: 12px;
+            }
+        }
+        &__correction {
+            margin-top: 32px;
+        }
+        &__file {
+            margin-top: 16px;
+            max-width: 100%;
+        }
+        &__comment {
+            font-size: 14px;
+            margin-top: 16px;
+        }
+    }
+    .order-info {
+        padding: 32px 24px;
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        &__hint {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        &__all {
+            margin-top: 16px;
+            display: block;
+            span {
+                margin-top: 4px;
+                display: block;
+            }
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+        &__hint {
+            margin-top: 12px;
+        }
+    }
+}

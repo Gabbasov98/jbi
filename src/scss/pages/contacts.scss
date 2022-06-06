@@ -64,6 +64,11 @@
 
 .team {
     padding: 70px 0;
+    &__desc {
+        line-height: 140%;
+        margin-top: 32px;
+        max-width: 740px;
+    }
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -151,6 +156,9 @@
     }
     .team {
         overflow: hidden;
+        &__desc {
+            margin-top: 20px;
+        }
         &__items {
             display: flex;
             gap: unset;

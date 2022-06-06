@@ -1,0 +1,149 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"О компании", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+            @@include('components/page-blocks/_breadcrumbs.html',{"second":"О компании","third":"","fourth":""})
+
+            <section class='about'>
+                <div class='container'>
+                    <h1 class="about__title display1">О компании ЖБИ России</h1>
+                </div>
+
+                @@include('components/page-blocks/_info.html')
+            </section>
+
+            <section class='popular-category'>
+                <div class='container'>
+                    <div class="popular-category__top">
+                        <div class="popular-category__title display2">В каталоге более ___ позиций </div>
+                        <div class="popular-category__desc">Сотрудничество с более 1200 производителями позволяет решать любые задачи. Ниже указаны разделы каталога. В случае, если вы не нашли подходящию позицию для вашего проекты, мы готовы индивидуально спроектировать и отправить в производство
+                            изделие.
+                        </div>
+                    </div>
+                    <div class='popular-category__items'>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category","title":"Энергетическое строительство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category2","title":"Тепловые сети и канализация"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category3","title":"Дорожное строительство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category4","title":"Железнодорожное строительство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category5","title":"Общегражданское и промышленное строительство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category","title":"Нефтегазовое строительство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category2","title":"Берегоукрепление"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category3","title":"Благоустройство"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category3","title":"Изделия из архитектурного бетона"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category3","title":"Изделия из стеклофибробетона"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category6","title":"Мостостроение"})
+                        </a>
+                        <a href="" class="popular-category__item">
+                            @@include('components/catalog/_popular-card.html',{"img":"category6","title":"Спецпозиции"})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='individual'>
+                @@include('components/page-blocks/_individual.html')
+            </section>
+
+            <section class='finish-projects'>
+                <div class='container'>
+                    <div class='finish-projects__top'>
+                        <div class="finish-projects__title display2">Рассказываем о выполенных проектах</div>
+                        <a href="" class="finish-projects__link link link1">
+                            <span>Все проекты</span>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="finish-projects__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac95dc7b618b3b5ffaeb005547d1eae8a8777c42eaa0302c27e9f98659086f61c&amp;source=constructor" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class='team team--about'>
+                <div class='container'>
+                    <div class="team__title display2">Наша команда</div>
+                    <div class="team__desc">Познакомьтесь с частью нашей компании — первоклассными специалистами по работе с клиентами. Менеджеры подготовят для вас оптимальное предложение по цене, срокам и доставке. Логист профессионально составит схему погрузки и сократит
+                        время доставки. Когда у вас возникают вопросы — смело звоните или пишите, менеджеры вам помогут.</div>
+                    <div class="team__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper team__items'>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team10","name":"Зиалтдинов Рустам","prof":"Генеральный директор"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team1","name":"Ильин Михаил","prof":"Коммерческий директор"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team2","name":"Гадельшин Денис","prof":"Руководитель отдела продаж"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team3","name":"Харисов Руслан","prof":"Руководитель отдела"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team4","name":"Никитина Евгения","prof":"Руководитель филиала г. Пермь"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team5","name":"Сторублевый Александр","prof":"Логист"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team6","name":"Тахаутдинов Ильнар","prof":"Менеджер"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team7","name":"Трошкина Полина","prof":"Координатор отдела продаж"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team8","name":"Жданова Людмила","prof":"Ассистент руководителя отдела продаж"})
+                                </div>
+                                <div class="team-card team-card2 swiper-slide">
+                                    @@include('components/cards/_team-card2.html',{"img":"team9","name":"Качанова Нина","prof":"Ассистент коммерческого директора "})
+                                </div>
+                            </div>
+                            <div class='swiper-button-prev'>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1L2 7L9 13" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class='swiper-button-next'>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
