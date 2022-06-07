@@ -139,4 +139,30 @@ $(document).ready(function() {
         $("body").removeClass("fixed-body")
     })
 
+
+    fixHeader()
+    $(window).scroll(function() {
+        fixHeader()
+    })
+
+    function fixHeader() {
+        if (window.innerWidth > 800) {
+            if ($(window).scrollTop() > 300) {
+                $(".header").addClass("header--fix")
+            } else {
+                $(".header").removeClass("header--fix")
+            }
+        } else {
+            if ($(window).scrollTop() > 200) {
+                $(".header").addClass("header--fix")
+            } else {
+                $(".header").removeClass("header--fix")
+            }
+        }
+
+    }
+
+    $(".header__toggle-search").click(function() {
+        $(".header__search").show()
+    })
 })
