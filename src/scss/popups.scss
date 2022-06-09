@@ -8,8 +8,8 @@
 }
 
 .modal {
-    text-align: center;
     @media screen and (min-width: 800px) {
+        text-align: center;
         &:before {
             display: inline-block;
             vertical-align: middle;

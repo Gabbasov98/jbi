@@ -69,10 +69,12 @@
     &__img {
         height: 180px;
         display: block;
+        overflow: hidden;
+        position: relative;
         &:hover {
             img {
                 z-index: 3;
-                transform: scale(1.1);
+                transform: translate(-50%, -50%) scale(1.05);
             }
         }
         img {
@@ -81,6 +83,10 @@
             width: 100%;
             object-fit: cover;
             position: relative;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     &__tags {
@@ -125,7 +131,7 @@
     border: 1px solid $grey2;
     padding: 28px 32px;
     &:not(:first-child) {
-        margin-top: -2px;
+        margin-top: -1px;
     }
     &--active {
         .qa-card {

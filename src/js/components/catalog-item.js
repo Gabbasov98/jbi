@@ -73,4 +73,30 @@ $(document).ready(function() {
             }
         }
     });
+
+
+    // let navPosition = document.querySelector(".catalog-nav").getBoundingClientRect()
+    if ($(".catalog-nav")) {
+        let navPosition = $(".catalog-nav").offset()
+        let scrolltop = $("body,html").scrollTop()
+        showPriceFooter()
+
+        $(window).scroll(function() {
+            scrolltop = $("body,html").scrollTop()
+            showPriceFooter()
+        })
+
+        function showPriceFooter() {
+            if (navPosition) {
+                if (scrolltop > navPosition.top) {
+                    $(".price-footer").addClass("price-footer--active")
+                } else {
+                    $(".price-footer").removeClass("price-footer--active")
+                }
+            }
+
+        }
+    }
+
+
 })

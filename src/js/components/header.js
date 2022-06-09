@@ -153,7 +153,7 @@ $(document).ready(function() {
 
     function fixHeader() {
         if (window.innerWidth > 800) {
-            if ($(window).scrollTop() > 200) {
+            if ($(window).scrollTop() > 75) {
                 $(".header").addClass("header--fix")
             } else {
                 $(".header").removeClass("header--fix")
