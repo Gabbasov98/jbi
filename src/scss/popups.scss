@@ -8,11 +8,25 @@
 }
 
 .modal {
+    text-align: center;
+    @media screen and (min-width: 800px) {
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: " ";
+            height: 100%;
+        }
+    }
     &-dialog {
         max-width: 613px;
         padding: 64px;
         background-color: #fff;
         pointer-events: unset;
+        @media screen and (min-width: 800px) {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
     }
     &__close {
         position: absolute;
@@ -163,16 +177,16 @@
         display: flex;
         flex-direction: column;
         min-height: 0;
+        @include scroll;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     &__scroll {
         margin-top: 48px;
         flex-grow: 1;
-        overflow-y: auto;
-        overflow-x: hidden;
         min-height: 0;
         padding-right: 24px;
-        @include scroll;
-        scroll-behavior: smooth;
     }
     &__groups {}
     &__group {
@@ -366,6 +380,33 @@
         }
         &__item {
             font-size: 14px;
+        }
+    }
+    .share-modal,
+    .modal-thanks {
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: " ";
+            height: 100%;
+        }
+        .modal {
+            &-dialog {
+                width: 100%;
+                max-width: calc(100% - 40px);
+                // width: unset;
+                height: unset;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+            }
+        }
+    }
+    .share-modal {
+        .modal {
+            &-dialog {
+                padding: 32px;
+            }
         }
     }
 }

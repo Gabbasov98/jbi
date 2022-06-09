@@ -69,10 +69,18 @@
     &__img {
         height: 180px;
         display: block;
+        &:hover {
+            img {
+                z-index: 3;
+                transform: scale(1.1);
+            }
+        }
         img {
+            transition: all .225s;
             height: 100%;
             width: 100%;
             object-fit: cover;
+            position: relative;
         }
     }
     &__tags {
@@ -121,6 +129,9 @@
     }
     &--active {
         .qa-card {
+            &__title {
+                font-weight: 600;
+            }
             &__btn {
                 background-color: $primaryHover;
                 border-color: $primaryHover;
@@ -131,6 +142,7 @@
         }
     }
     &__show {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -355,6 +367,8 @@
 .catalog-card2 {
     padding: 12px 32px 40px;
     border: 1px solid $grey2;
+    display: flex;
+    flex-direction: column;
     &__img {
         display: flex;
         align-items: center;
@@ -405,6 +419,9 @@
         padding: 0;
         height: 37px;
         font-size: 14px;
+    }
+    &__bottom {
+        margin-top: auto;
     }
 }
 
@@ -753,6 +770,7 @@
         }
         &__size {
             display: flex;
+            flex-wrap: wrap;
             gap: unset;
             height: 17px;
             width: 170px;
@@ -989,7 +1007,7 @@
         }
         &__nav {
             flex-grow: 1;
-            margin: 0 0 0 23px;
+            margin: 0 0 0 auto;
             max-width: 163px;
         }
     }
@@ -1052,7 +1070,7 @@
         }
         &__nav {
             flex-grow: 1;
-            margin: 0 0 0 23px;
+            margin: 0 0 0 auto;
             max-width: 163px;
         }
     }

@@ -21,6 +21,7 @@
         padding: 16px;
         display: block;
         &-img {
+            flex-shrink: 0;
             height: 80px;
             display: flex;
             align-items: flex-end;
@@ -175,12 +176,12 @@
     .individual {
         padding: 50px 0;
         &__inner {
-            padding: 60px 277px 60px 50px;
+            padding: 45px 277px 45px 50px;
             position: relative;
             overflow: hidden;
         }
         &__info {
-            min-height: 331px;
+            min-height: 250px;
         }
         &__img {
             margin-right: 40px;

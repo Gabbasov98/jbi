@@ -8,7 +8,7 @@ $(document).ready(function() {
     let numsNode = $(".prize__nums")
     let num = $(numsNode).attr("data-num")
     if (num) {
-        let digitNum = num.length
+
     }
 
     let animateTo = +num
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
     function initPrizeNums() {
-
+        let digitNum = num.length
         let stringToNum = num => Number(num);
         let intNumsArray = Array.from(String(animateTo), stringToNum);
 

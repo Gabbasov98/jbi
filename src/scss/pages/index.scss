@@ -305,6 +305,9 @@
         margin-top: 38px;
     }
     .swiper {
+        &-container {
+            height: 100%;
+        }
         &-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -347,6 +350,11 @@
         font-size: 12px;
         line-height: 120%;
         color: $grey;
+        a {
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -806,6 +814,7 @@
     }
     .index-catalog {
         &__link {
+            margin-left: 22px;
             &-mob {
                 display: none;
             }
@@ -935,6 +944,7 @@
     .done-projects {
         overflow: hidden;
         &__link {
+            margin-left: 22px;
             &-mob {
                 display: none;
             }
@@ -985,6 +995,7 @@
     .index-news {
         overflow: hidden;
         &__link {
+            margin-left: 22px;
             &-mob {
                 display: none;
             }

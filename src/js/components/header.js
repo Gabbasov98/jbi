@@ -130,12 +130,18 @@ $(document).ready(function() {
             $("body").addClass("fixed-body")
         } else {
             $(".header-search").removeClass("header-search--active")
+            if ($(".menu").hasClass("menu--active")) {
+                return
+            }
             $("body").removeClass("fixed-body")
         }
     })
 
     $(".header__search .search-block__reset").click(function() {
         $(".header-search").removeClass("header-search--active")
+        if ($(".menu").hasClass("menu--active")) {
+            return
+        }
         $("body").removeClass("fixed-body")
     })
 
@@ -147,7 +153,7 @@ $(document).ready(function() {
 
     function fixHeader() {
         if (window.innerWidth > 800) {
-            if ($(window).scrollTop() > 300) {
+            if ($(window).scrollTop() > 200) {
                 $(".header").addClass("header--fix")
             } else {
                 $(".header").removeClass("header--fix")
@@ -163,6 +169,7 @@ $(document).ready(function() {
     }
 
     $(".header__toggle-search").click(function() {
-        $(".header__search").show()
+        $(".header__search").slideToggle()
+        $(this).toggleClass("header__toggle-search--active")
     })
 })

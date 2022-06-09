@@ -116,9 +116,20 @@ $(document).ready(function() {
         console.log(deliveryType);
         if (deliveryType === 2) {
             $(".order__delivery-input").hide()
+            $(".order-info__hint--delivery").hide()
+            $(".order-info__hint--self").show()
+            $(".order-info__min").show()
         } else {
             $(".order__delivery-input").show()
+            $(".order-info__hint--delivery").show()
+            $(".order-info__hint--self").hide()
+            $(".order-info__min").hide()
         }
+    })
+
+    $(".order__comment").click(function() {
+        $(this).hide()
+        $(".order__comment-hidden").show()
     })
 
 })

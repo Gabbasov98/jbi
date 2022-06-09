@@ -55,13 +55,9 @@ $(document).ready(function() {
         if (tagsNum === 1) {
             $(".tag--clear").remove()
         }
-    })
-
-    $(".tag--clear").click(function() {
-        $(".tag").each(function(index, el) {
-            $(el).remove();
-            console.log(el);
-        });
+        if ($(this).parent(".tag").hasClass("tag--clear")) {
+            $(".tags").hide()
+        }
     })
 
 })

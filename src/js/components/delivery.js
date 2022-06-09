@@ -27,7 +27,7 @@ $(document).ready(function() {
         }
     })
 
-    $(".qa-card__btn").click(function() {
+    $(".qa-card__show").click(function() {
         $(this).parents(".qa-card").toggleClass("qa-card--active")
         $(this).parents(".qa-card").find(".qa-card__hidden").slideToggle()
     })

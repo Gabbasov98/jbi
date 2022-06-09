@@ -1,6 +1,7 @@
 @import "vars";
 .header {
     position: relative;
+    transition: all .225s;
     &--fix {
         z-index: 30;
         width: 100%;
@@ -10,9 +11,13 @@
         transform: translateY(-72px);
         background: #FFFFFF;
         box-shadow: 0px 5px 12px rgba(51, 51, 51, 0.1);
-        &~.menu {
+        &~.menu,
+        &~.header-search {
             height: calc(100vh - 115px);
             top: 115px;
+        }
+        &~.content {
+            margin-top: 200px;
         }
     }
     &__req {
@@ -368,7 +373,8 @@
     .header {
         &--fix {
             transform: translateY(-102px);
-            &~.menu {
+            &~.menu,
+            &~.header-search {
                 height: calc(100vh - 160px);
                 top: 160px;
             }
@@ -479,9 +485,22 @@
                 &__burger {
                     margin-right: 20px;
                 }
-                &__toggle-search {
-                    display: flex;
-                    margin-right: 60px;
+                &__toggle {
+                    &-search {
+                        display: flex;
+                        margin-right: 70px;
+                        &--active {
+                            .header__toggle-search1 {
+                                display: none;
+                            }
+                            .header__toggle-search2 {
+                                display: unset;
+                            }
+                        }
+                    }
+                    &-search2 {
+                        display: none;
+                    }
                 }
                 &__estimate {
                     top: 8px;
@@ -550,7 +569,7 @@
         &__estimate {
             position: absolute;
             top: 17px;
-            right: 40px;
+            right: 50px;
             width: unset;
             height: unset;
             padding: 0;
@@ -621,7 +640,7 @@
     .header-top {
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -300%;
         width: 100%;
         height: 100vh;
         background-color: $grey3;
@@ -632,10 +651,14 @@
             left: 0;
         }
         &__inner {
-            display: block;
+            flex-direction: column;
+            align-items: unset;
+            flex-wrap: unset;
+            height: 100%;
         }
         .container {
             padding: 0;
+            height: 100%;
         }
     }
     .header-bottom {
@@ -666,6 +689,10 @@
         padding: 16px;
         display: flex;
         text-align: left;
+        &::before,
+        &::after {
+            display: none;
+        }
         &__buttons {
             margin: -3px 0 0 0;
             flex-shrink: 0;
@@ -675,6 +702,7 @@
         }
     }
     .header-city {
+        order: -1;
         &__title {
             display: block;
             font-size: 15px;
@@ -698,11 +726,12 @@
     .nav {
         display: block;
         margin: 30px 0 90px;
+        order: -1;
         ul {
             display: block;
         }
         li {
-            margin: 0 0 20px;
+            margin: 0 0 18px !important;
         }
         a {
             font-size: 15px;

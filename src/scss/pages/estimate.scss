@@ -151,6 +151,7 @@
         display: flex;
     }
     &__img {
+        display: block;
         width: 180px;
         flex-shrink: 0;
         margin-right: 32px;
@@ -240,7 +241,7 @@
     &__delete {
         &:hover {
             path {
-                fill: $primaryHover;
+                fill: $red;
             }
         }
         &-mode {
@@ -341,6 +342,13 @@
         svg {
             margin-right: 7px;
         }
+        &-hidden {
+            margin-top: 48px;
+            display: none;
+        }
+        &-fg {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -382,6 +390,15 @@
         font-size: 16px;
         line-height: 140%;
         color: $grey;
+        &--self {
+            display: none;
+        }
+    }
+    &__min {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
+        display: none;
     }
     &__all {
         margin-top: 24px;
@@ -402,7 +419,9 @@
         max-width: 342px;
         margin: 12px auto 0;
         a {
-            color: $black;
+            &:hover {
+                color: $black;
+            }
         }
     }
 }
@@ -587,6 +606,9 @@
     .estimate {
         &__search {
             margin-top: 24px;
+            input {
+                font-size: 15px;
+            }
         }
         &__nav {
             justify-content: space-between;
@@ -723,6 +745,9 @@
         &__comment {
             font-size: 14px;
             margin-top: 16px;
+            &-hidden {
+                margin-top: 32px;
+            }
         }
     }
     .order-info {

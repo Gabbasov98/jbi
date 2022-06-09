@@ -1,18 +1,18 @@
 @import '../vars.scss';
 @import '../mixins.scss';
 .header-search {
-    padding: 48px 0 80px;
+    padding: 48px 0 0;
     position: fixed;
     height: calc(100vh - 188px);
     width: 100%;
     top: 188px;
     left: 0;
-    z-index: 45;
+    z-index: 92;
     background-color: #fff;
     border-top: 1px solid $grey2;
     opacity: 0;
     pointer-events: none;
-    transition: all .225s;
+    transition: all .425s;
     .container {
         height: 100%;
     }
@@ -84,7 +84,7 @@
         margin-top: 64px;
     }
     &__all {
-        margin: 48px auto 0;
+        margin: 48px auto 80px;
         width: 296px;
         height: 45px;
         font-size: 14px;
@@ -95,16 +95,20 @@
 
 @media screen and (max-width: 1500px) {
     .header-search {
-        padding-bottom: 60px;
         &__items {
             column-count: 2;
+        }
+        &__all {
+            margin-bottom: 60px;
         }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .header-search {
-        padding: 20px 0 30px;
+        padding: 20px 0 0;
+        top: 270px;
+        height: calc(100vh - 270px);
         &__title {
             margin-bottom: 8px;
         }
@@ -122,7 +126,7 @@
             margin-top: 32px;
         }
         &__all {
-            margin-top: 32px;
+            margin: 32px 0;
         }
     }
 }

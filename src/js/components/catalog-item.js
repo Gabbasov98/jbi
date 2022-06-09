@@ -60,4 +60,17 @@ $(document).ready(function() {
         $(this).hide()
         $(".catalog-desc__text").addClass("catalog-desc__text--show")
     })
+
+    $(".catalog-nav__hint-question").click(function() {
+        $(this).toggleClass("catalog-nav__hint-question--active")
+    })
+
+    $(document).mouseup(function(e) {
+        var div = $('.catalog-nav__hint-tooltip');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            if ($(".catalog-nav__hint-question").hasClass("catalog-nav__hint-question--active")) {
+                $(".catalog-nav__hint-question").removeClass("catalog-nav__hint-question--active")
+            }
+        }
+    });
 })

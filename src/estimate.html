@@ -92,9 +92,9 @@
                                     <td>1</td>
                                     <td>
                                         <div class="estimate-card__info">
-                                            <div class="estimate-card__img">
+                                            <a href="" class="estimate-card__img">
                                                 <img src="img/estimate2.webp" alt="">
-                                            </div>
+                                            </a>
                                             <div class="estimate-card__content">
                                                 <a href="" class="estimate-card__tag">плиты перекрытия и например очень длинноеплиты перекрытия и например очень длинное dffffffffff</a>
                                                 <a href="" class="estimate-card__title display3">ПК 24-10-8</a>
@@ -153,9 +153,9 @@
                                     <td>2</td>
                                     <td>
                                         <div class="estimate-card__info">
-                                            <div class="estimate-card__img">
+                                            <a href="" class="estimate-card__img">
                                                 <img src="img/estimate3.webp" alt="">
-                                            </div>
+                                            </a>
                                             <div class="estimate-card__content">
                                                 <a href="" class="estimate-card__tag">Ригели ЖД платформ </a>
                                                 <a href="" class="estimate-card__title display3">МШЛ-0.35</a>
@@ -244,7 +244,7 @@
                                         </div>
                                     </div>
                                     <fieldset class='order__delivery-input form-group'>
-                                        @@include('components/ui/_input.html',{"type":"text","label":"ИНН организации"})
+                                        @@include('components/ui/_input.html',{"type":"text","label":"Укажите адрес доставки"})
                                     </fieldset>
                                 </div>
 
@@ -276,6 +276,16 @@
                                     </svg>
                                     <span>Комменатрий к заказу</span>
                                 </button>
+
+                                <div class="order__comment-hidden">
+                                    <div class="order__subtitle display3">
+                                        Комменатрий к заказу
+                                        <span>(необязательно)</span>
+                                    </div>
+                                    <fieldset class='order__comment-fg form-group'>
+                                        <textarea placeholder="Ваш комментарий"></textarea>
+                                    </fieldset>
+                                </div>
                             </div>
                             <div class="order__right">
                                 <div class="order-info">
@@ -294,15 +304,16 @@
                                         </div>
                                     </div>
 
-                                    <div class="order-info__hint">Стоимость доставки считается логистом после отправки заказа.</div>
+                                    <div class="order-info__hint order-info__hint--delivery">Стоимость доставки считается логистом после отправки заказа.</div>
+                                    <div class="order-info__hint order-info__hint--self">Точный адрес и условия самовывоза сообщит менеджер после отправки заявки.</div>
                                     <div class="order-info__all display2">
                                         <span>Итого</span>
                                         <span>67 296,78 р.</span>
                                     </div>
-
+                                    <div class="order-info__min">Минимальная сумма заказа 45 000 руб.</div>
                                     <button class="order-info__btn btn btn-yellow">Оформить заказ</button>
                                     <div class="order-info__hint2">
-                                        Нажимая на кнопку «Оформить заказ», вы принимаете условия Публичной оферты и <a href="">Политику обработки</a>
+                                        Нажимая на кнопку «Оформить заказ», вы принимаете условия <a href="">Публичной оферты</a> и <a href="">Политику обработки</a>
                                     </div>
                                 </div>
                             </div>
