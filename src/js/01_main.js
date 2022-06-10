@@ -108,6 +108,15 @@ $(document).ready(function() {
         }
     })
 
+
+    let breadsLength = $(".breadcrumbs__item").length
+    if (breadsLength > 2) {
+        $(".breadcrumbs").addClass("breadcrumbs--collapse")
+    }
+    $(".breadcrumbs__btn").click(function() {
+        $(".breadcrumbs").removeClass("breadcrumbs--collapse")
+    })
+
 });
 
 function setSelect(el) {

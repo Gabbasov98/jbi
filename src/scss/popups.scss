@@ -110,6 +110,9 @@
 }
 
 .modal-city {
+    &::before {
+        display: none;
+    }
     .modal {
         &-dialog {
             max-width: 1000px;
@@ -177,16 +180,16 @@
         display: flex;
         flex-direction: column;
         min-height: 0;
-        @include scroll;
-        scroll-behavior: smooth;
-        overflow-y: auto;
-        overflow-x: hidden;
     }
     &__scroll {
         margin-top: 48px;
         flex-grow: 1;
         min-height: 0;
         padding-right: 24px;
+        @include scroll;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     &__groups {}
     &__group {
@@ -317,7 +320,14 @@
             &-dialog {
                 max-height: unset;
                 padding-bottom: 10px;
+                padding-top: 26px;
             }
+            &__close {
+                top: 34px;
+            }
+        }
+        &__search {
+            margin-top: 54px;
         }
         &__bottom {
             position: relative;
@@ -345,6 +355,7 @@
             font-size: 12px;
             line-height: 120%;
             height: unset;
+            flex-grow: 1;
             &:not(:last-child) {
                 margin-bottom: 10px;
             }

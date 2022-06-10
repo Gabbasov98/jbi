@@ -25,4 +25,36 @@
             }
         }
     }
+    &__btn {
+        display: none;
+        width: 39px;
+        height: 27px;
+        border-radius: 4px;
+        border: 1px solid $grey2;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .breadcrumbs {
+        &--collapse {
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            .breadcrumbs {
+                &__inner {
+                    display: inline-block;
+                }
+                &__item {
+                    &:not(:last-child) {
+                        display: none;
+                    }
+                }
+                &__btn {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
 }

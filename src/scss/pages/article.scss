@@ -95,6 +95,9 @@
     background-color: $grey3;
     margin-top: 63px;
     padding: 40px 32px;
+    &--mob {
+        display: none;
+    }
     &__desc {
         font-size: 16px;
         line-height: 140%;
@@ -160,6 +163,18 @@
         &__link {
             margin-top: 28px;
             width: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .article-info {
+        &--dekstop {
+            display: none;
+        }
+        &--mob {
+            display: block;
+            margin: 32px 0;
         }
     }
 }
