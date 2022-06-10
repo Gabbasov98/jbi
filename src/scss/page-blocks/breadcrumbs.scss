@@ -32,6 +32,7 @@
         border-radius: 4px;
         border: 1px solid $grey2;
         justify-content: center;
+        flex-shrink: 0;
     }
 }
 
@@ -47,6 +48,11 @@
                     display: inline-block;
                 }
                 &__item {
+                    display: block;
+                    &::before {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
                     &:not(:last-child) {
                         display: none;
                     }
