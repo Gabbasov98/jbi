@@ -439,4 +439,67 @@
     </div>
 </div>
 
-<!-- <div class="modal-backdrop show"></div> -->
+<div class="modal pass-recover-modal" id="recoverPassModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Восстановление пароля</div>
+        <div class="modal__desc">
+            На email <strong>alex@mail.ru</strong> будет отправлено письмо со ссылкой для восстановления пароля.
+        </div>
+        <button class="modal__btn btn btn-yellow">Прислыть ссылку</button>
+
+    </div>
+</div>
+
+<div class="modal pass-recover-modal" id="recoverPassModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Письмо отправлено</div>
+        <div class="modal__desc">
+            На ваш email отправлено письмо <br>
+            со ссылкой. Перейдите по ней для смены пароля. <br>
+            Если его нет во входящих, проверьте папку «Спам».
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="edoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Заявка на переход компании на ЭДО</div>
+        <div class="modal__desc">После отправки данных, мы пригласим вас к ЭДО. Вам необходимо будет подтвердить приглашение.</div>
+
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Идентификационный номер"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Название оператора"})
+            </fieldset>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<!--<div class="modal-backdrop show"></div>-->

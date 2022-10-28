@@ -1,0 +1,146 @@
+.auth{
+  padding: 100px 0;
+  &__inner{
+    width: 485px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__form{
+    margin-top: 28px;
+  }
+  &__check{
+    margin-top: 32px;
+  }
+  &__btn{
+    margin-top: 32px;
+    width: 100%;
+  }
+  &__nav{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 140%;
+    &:not(:last-child){
+      margin-bottom: 12px;
+    }
+  }
+  &__top-nav{
+    margin-bottom: 40px;
+  }
+  &__back{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 140%;
+    color: $grey;
+    svg{
+      margin-right: 20px;
+    }
+    &:hover{
+      path{
+        stroke: $primaryHover;
+      }
+    }
+  }
+  &__desc{
+    margin-top: 16px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  &__email{
+    margin: -8px 0 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #FDE7E7;
+    &-title{
+      font-size: 12px;
+      line-height: 120%;
+      a{
+        text-decoration: underline;
+      }
+    }
+    svg{
+      margin-right: 4px;
+    }
+  }
+}
+
+.change-phone{
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  &__btn{
+    margin-left: 32px;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  &__grid{
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: auto 152px;
+    gap: 12px 32px;
+    .form-group{
+      margin: 0;
+    }
+    .auth__btn{
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      height: 53px;
+    }
+  }
+  &__hint{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 120%;
+    svg{
+      margin-right: 4px;
+    }
+  }
+  &__status{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: $green;
+    svg{
+      margin-right: 4px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .auth{
+    padding: 0;
+    &__check,
+    &__btn,
+    &__nav{
+      margin-top: 24px;
+    }
+  }
+
+  .change-phone{
+    &__grid{
+      grid-template-columns: 100%;
+    }
+  }
+}

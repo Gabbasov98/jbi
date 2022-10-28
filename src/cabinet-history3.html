@@ -1,0 +1,35 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"История заказов", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class='cabinet'>
+                <div class='container'>
+                    <div class='cabinet__inner'>
+                        <div class="cabinet__sidebar">
+                            @@include('components/cabinet/_cabinet-sidebar.html',{"active":"1"})
+                        </div>
+                        <div class="cabinet__content">
+                            <h1 class="cabinet__title display2">
+                                История заказов
+                                <span class="grey-text">(0)</span>
+                            </h1>
+                            @@include('components/cabinet/_filter-cabinet.html',{"title":"Все заказы"})
+                            @@include('components/cabinet/_cabinet-error.html')
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

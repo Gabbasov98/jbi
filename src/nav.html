@@ -6,17 +6,100 @@
         font-size: 30px;
         text-transform: capitalize;
     }
-    
+
     .wrapper button {
         margin-bottom: 25px;
         width: 300px;
         height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news-nav-links{
+        margin-bottom: 70px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #000;
+    }
+
+    .news-nav-links__title{
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 40px;
     }
 </style>
 
 <body>
 
     <div class="wrapper" style="padding: 50px;">
+        <div class="news-nav-links">
+            <div class="news-nav-links__title">Новые страницы</div>
+            <a href="login.html" style="display: block; margin-bottom: 20px;">
+                Страница входа
+            </a>
+            <a href="login-with-password.html" style="display: block; margin-bottom: 20px;">
+                Вход по паролю/email
+            </a>
+            <a href="change-password.html" style="display: block; margin-bottom: 20px;">
+                Изменение пароля
+            </a>
+            <a href="password-saved.html" style="display: block; margin-bottom: 20px;">
+                Пароль сохранен
+            </a>
+            <a href="login-code.html" style="display: block; margin-bottom: 20px;">
+                Введите код
+            </a>
+            <a href="login-code2.html" style="display: block; margin-bottom: 20px;">
+                Введите код 2
+            </a>
+            <a href="reg.html" style="display: block; margin-bottom: 20px;">
+                Регистрация
+            </a>
+            <a href="reg-success.html" style="display: block; margin-bottom: 20px;">
+                Регистрация прошла успешно!
+            </a>
+            <a href="cabinet-history.html" style="display: block; margin-bottom: 20px;">
+                История заказов
+            </a>
+            <a href="cabinet-history2.html" style="display: block; margin-bottom: 20px;">
+                История заказов 2
+            </a>
+            <a href="cabinet-history3.html" style="display: block; margin-bottom: 20px;">
+                История заказов 3
+            </a>
+            <a href="cabinet-doc.html" style="display: block; margin-bottom: 20px;">
+                Документы
+            </a>
+            <a href="cabinet-doc2.html" style="display: block; margin-bottom: 20px;">
+                Документы 2
+            </a>
+            <a href="cabinet-doc3.html" style="display: block; margin-bottom: 20px;">
+                Документы 3
+            </a>
+            <a href="cabinet-doc4.html" style="display: block; margin-bottom: 20px;">
+                Документы 4
+            </a>
+            <a href="header-lk.html" style="display: block; margin-bottom: 20px;">
+
+            </a>
+            <a href="header-lk2.html" style="display: block; margin-bottom: 20px;">
+                Шапка (Не вошел в лк)
+            </a>
+            <a href="header-lk2.html" style="display: block; margin-bottom: 20px;">
+                Шапка (Есть уведомление)
+            </a>
+
+            <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#recoverPassModal">
+                Восстановление пароля
+            </button>
+            <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#recoverPassModal2">
+                Письмо отправлено
+            </button>
+            <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#edoModal">
+                Заявка на ЭДО
+            </button>
+        </div>
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -72,7 +155,7 @@
             Политика обработки персональных данных
         </a>
         <a href="ui.html" style="display: block; margin-bottom: 20px;">
-            UI-KIT 
+            UI-KIT
         </a>
 
 

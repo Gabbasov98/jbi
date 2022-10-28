@@ -1,0 +1,31 @@
+<div class="doc-card @@edo orders__grid2">
+    <div class="doc-card__content">
+        <div class="doc-card__check">
+            <input type="checkbox">
+            <label>
+                <img src="img/pdf.svg" alt="">
+            </label>
+        </div>
+        <div class="doc-card__info">
+            <div class="doc-card__title">@@num</div>
+            <div class="doc-card__date body-text grey-text">@@date</div>
+        </div>
+        @@if(newBadge === "true"){
+        <div class="doc-card__badge-wrap">
+            <div class="doc-card__badge">новое</div>
+        </div>
+        }
+    </div>
+    <div class="doc-card__edo">
+        @@if(status !== ""){
+        <div class="doc-card__status @@statusColor">@@status</div>
+        }
+
+        <a href="" class="doc-card__download grey-text">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.12561 12.7622L4.91361 8.87419M9.12561 12.7622L13.0136 8.8742M9.12561 12.7622V0.450195M16.9016 8.2262V16.6502H1.34961V8.2262" stroke="#939393" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span>Скачать</span>
+        </a>
+    </div>
+</div>

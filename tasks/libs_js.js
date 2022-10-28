@@ -5,6 +5,7 @@ const plugins = [
     'node_modules/priority-nav/dist/priority-nav.min.js',
     'node_modules/swiper/swiper-bundle.js',
     'src/libs/js/jquery.magnific-popup.min.js',
+    'src/libs/js/jquery.nice-select.min.js',
 
 ];
 const {

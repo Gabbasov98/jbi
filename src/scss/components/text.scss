@@ -25,6 +25,11 @@
     text-decoration-line: underline;
 }
 
+.body-text{
+    font-size: 14px;
+    line-height: 120%;
+}
+
 p {
     line-height: 140%;
     &:not(:last-child) {
@@ -35,7 +40,7 @@ p {
     }
 }
 
-ul {
+ul:not(.list) {
     &>li {
         line-height: 140%;
         padding-left: 30px;

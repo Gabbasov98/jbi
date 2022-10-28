@@ -3,6 +3,7 @@ const plugins = [
     'node_modules/priority-nav/dist/priority-nav-core.css',
     'node_modules/swiper/swiper-bundle.css',
     'src/libs/css/magnific-popup.css',
+    'src/libs/css/nice-select.css',
 ];
 
 const {

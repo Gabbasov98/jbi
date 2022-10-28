@@ -172,4 +172,19 @@ $(document).ready(function() {
         $(".header__search").slideToggle()
         $(this).toggleClass("header__toggle-search--active")
     })
+
+    $(".header-lk__toggle").click(function() {
+        $(".header-lk").toggleClass("header-lk--active")
+    })
+
+    $(document).mouseup(function(e) {
+        var div = $('.header-lk__dropdown');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            if (!div.is(e.target) && div.has(e.target).length === 0) {
+                if ($(".header-lk").hasClass("header-lk--active")) {
+                    $(".header-lk").removeClass("header-lk--active")
+                }
+            }
+        }
+    });
 })

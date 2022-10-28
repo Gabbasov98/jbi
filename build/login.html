@@ -1,0 +1,2768 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Страница входа</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+    <section class='header-top'>
+        <div class='container'>
+            <div class='header-top__inner'>
+                <button class="header__close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1L1 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="header-city">
+                    <div class="header-city__title">Ваш регион доставки</div>
+                    <div class="header-city__wrap">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.63158L15 1L8.36842 15L6.89474 9.10526L1 7.63158Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="header-city__name" data-bs-toggle="modal" data-bs-target="#cityModal">Екатеринбург</span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.70006 3.67357C9.88796 3.47121 9.87624 3.15484 9.67389 2.96694C9.47153 2.77904 9.15516 2.79076 8.96726 2.99311L9.70006 3.67357ZM5.00033 8.00001L4.63393 8.34023L5.00033 8.73481L5.36672 8.34023L5.00033 8.00001ZM1.03339 2.99311C0.845488 2.79076 0.529122 2.77904 0.326767 2.96694C0.124411 3.15484 0.112694 3.47121 0.300595 3.67357L1.03339 2.99311ZM8.96726 2.99311L4.63393 7.65978L5.36672 8.34023L9.70006 3.67357L8.96726 2.99311ZM5.36672 7.65978L1.03339 2.99311L0.300595 3.67357L4.63393 8.34023L5.36672 7.65978Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li class="active">
+                            <a href="">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="">Выполненные проекты</a>
+                        </li>
+                        <li>
+                            <a href="">О компании</a>
+                        </li>
+                        <li>
+                            <a href="">Полезное</a>
+                        </li>
+                        <li>
+                            <a href="">Кешбэк</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="tel:88001252478" class="header__phone">8 800 125-24-78</a>
+                <a href="mailto:zakaz@ruzhbi.ru" class="header__mail">zakaz@ruzhbi.ru</a>
+
+                <div class="header__socials">
+                    <a href="" class="header__socials-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92488 22 0 17.0751 0 11C0 4.92488 4.92488 0 11 0C17.0751 0 22 4.92488 22 11ZM7.3661 9.99235C6.26418 10.4735 5.132 10.9678 4.0967 11.5381C3.5561 11.9339 4.27459 12.2139 4.94867 12.4765C5.05583 12.5183 5.16184 12.5596 5.26153 12.6008C5.34449 12.6264 5.42882 12.6532 5.5143 12.6804C6.264 12.9193 7.0999 13.1856 7.82774 12.785C9.02335 12.0982 10.1516 11.3041 11.2791 10.5107C11.6485 10.2508 12.0177 9.99089 12.3893 9.73486C12.4067 9.72373 12.4263 9.71098 12.4478 9.6971C12.7643 9.4919 13.4761 9.0305 13.2128 9.6663C12.5902 10.3472 11.9233 10.9499 11.2528 11.556C10.8009 11.9644 10.3473 12.3743 9.90454 12.8106C9.51894 13.124 9.1185 13.754 9.55029 14.1928C10.5448 14.889 11.5549 15.5683 12.5644 16.2473C12.8929 16.4682 13.2214 16.6892 13.5492 16.9106C14.1048 17.3542 14.9731 16.9954 15.0952 16.3022C15.1495 15.9834 15.2041 15.6645 15.2586 15.3457C15.56 13.5835 15.8615 11.8207 16.1278 10.0529C16.164 9.77552 16.2051 9.49823 16.2461 9.2208C16.3456 8.54838 16.4453 7.87513 16.4764 7.19909C16.3962 6.52442 15.5782 6.67278 15.1229 6.82449C12.7831 7.71485 10.4665 8.67121 8.1592 9.64443C7.89782 9.76021 7.63285 9.87589 7.3661 9.99235Z" fill="#333333"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header__socials-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11.3626 17.1199C14.9689 17.1184 17.902 14.1846 17.9035 10.579C17.9042 8.83132 17.2244 7.18796 15.9895 5.95165C14.7546 4.71527 13.1123 4.03409 11.3625 4.03333C7.75721 4.03333 4.82294 6.96744 4.82151 10.5739C4.82102 11.7267 5.12221 12.8519 5.69461 13.8439L4.76667 17.2333L8.23412 16.3237C9.18949 16.8449 10.2652 17.1195 11.3599 17.1199H11.3626Z" fill="#333333"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39468 15.1396L6.33705 15.6794L6.88626 13.6732L6.757 13.4675C6.21279 12.6019 5.92536 11.6015 5.92578 10.5742C5.92697 7.57676 8.36583 5.13812 11.3646 5.13812C12.8167 5.13862 14.1817 5.70483 15.2082 6.73245C16.2346 7.76008 16.7996 9.12597 16.799 10.5786C16.7978 13.5764 14.359 16.0152 11.3625 16.0152H11.3603C10.3847 16.0149 9.42791 15.7528 8.5932 15.2574L8.39468 15.1396ZM14.6578 12.1344C14.6169 12.0663 14.508 12.0254 14.3445 11.9435C14.1811 11.8617 13.3776 11.4664 13.2277 11.4118C13.078 11.3573 12.969 11.33 12.86 11.4936C12.7511 11.6572 12.4379 12.0254 12.3425 12.1344C12.2472 12.2435 12.1518 12.2572 11.9885 12.1753C11.825 12.0935 11.2984 11.921 10.6741 11.3641C10.1883 10.9308 9.86027 10.3956 9.76494 10.2319C9.6696 10.0683 9.75477 9.9799 9.83659 9.8984C9.91012 9.82515 10 9.70747 10.0818 9.61206C10.1635 9.51666 10.1907 9.44844 10.2452 9.33944C10.2997 9.23031 10.2724 9.13491 10.2316 9.05309C10.1907 8.97128 9.86385 8.16681 9.72766 7.83956C9.59498 7.52087 9.46025 7.56404 9.35993 7.55901C9.26471 7.55423 9.15564 7.55322 9.04669 7.55322C8.93774 7.55322 8.76067 7.59413 8.61087 7.75775C8.46106 7.92138 8.03885 8.31678 8.03885 9.12119C8.03885 9.92565 8.62448 10.7028 8.7062 10.8119C8.78791 10.921 9.85865 12.5718 11.4982 13.2797C11.8881 13.4481 12.1925 13.5487 12.4299 13.624C12.8214 13.7484 13.1777 13.7308 13.4593 13.6887C13.7733 13.6418 14.4262 13.2934 14.5625 12.9116C14.6986 12.5298 14.6986 12.2026 14.6578 12.1344Z" fill="#333333"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="header__req btn">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <section class='header-bottom'>
+        <div class='container'>
+            <div class='header-bottom__inner'>
+                <button class="header__burger">
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 1H1" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M19 7H1" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M13 13L1 13" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="header__toggle-search">
+                    <svg class="header__toggle-search1" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4762 17.8097C14.5262 17.8097 17.8095 14.5265 17.8095 10.4764C17.8095 6.42631 14.5262 3.14307 10.4762 3.14307C6.42607 3.14307 3.14282 6.42631 3.14282 10.4764C3.14282 14.5265 6.42607 17.8097 10.4762 17.8097Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.9048 19.9048L15.7144 15.7144" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="header__toggle-search2" width="22" height="22" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.70711 1.29289C2.31658 0.902369 1.68342 0.902369 1.29289 1.29289C0.902369 1.68342 0.902369 2.31658 1.29289 2.70711L2.70711 1.29289ZM18.2929 19.7071C18.6834 20.0976 19.3166 20.0976 19.7071 19.7071C20.0976 19.3166 20.0976 18.6834 19.7071 18.2929L18.2929 19.7071ZM1.29289 18.2929C0.902369 18.6834 0.902369 19.3166 1.29289 19.7071C1.68342 20.0976 2.31658 20.0976 2.70711 19.7071L1.29289 18.2929ZM19.7071 2.70711C20.0976 2.31658 20.0976 1.68342 19.7071 1.29289C19.3166 0.902369 18.6834 0.902369 18.2929 1.29289L19.7071 2.70711ZM1.29289 2.70711L18.2929 19.7071L19.7071 18.2929L2.70711 1.29289L1.29289 2.70711ZM2.70711 19.7071L19.7071 2.70711L18.2929 1.29289L1.29289 18.2929L2.70711 19.7071Z" fill="#333333"/>
+                    </svg>
+                </button>
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="header__call">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66317 1.6H4.0001C2.67461 1.6 1.6001 2.67452 1.6001 4V6.4C1.6001 13.0274 6.97268 18.4 13.6001 18.4H16.0001C17.3256 18.4 18.4001 17.3255 18.4001 16V14.3416C18.4001 13.8871 18.1433 13.4716 17.7368 13.2683L14.8376 11.8188C14.1845 11.4922 13.3935 11.8198 13.1626 12.5126L12.8052 13.5846C12.5738 14.2789 11.8615 14.6923 11.1438 14.5487C8.27125 13.9742 6.02587 11.7289 5.45136 8.8563C5.30782 8.13859 5.72117 7.42631 6.41553 7.19486L7.74588 6.7514C8.34075 6.55312 8.68266 5.93026 8.53058 5.32194L7.82734 2.50896C7.69379 1.97476 7.21381 1.6 6.66317 1.6Z" stroke="#333333" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <button class="header__catalog-btn btn btn-yellow">
+                    <span class="header__catalog-btn-icon"></span>
+                    <span>Каталог</span>
+                </button>
+
+                <form class="search-block header__search form-group">
+                    <input type="text" placeholder="Введите название или артикул товара"> <div class="search-block__nav">
+    <button type="reset" class="search-block__reset">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.80708 1.3925C2.41656 1.00198 1.78339 1.00198 1.39287 1.3925C1.00234 1.78303 1.00234 2.41619 1.39287 2.80672L2.80708 1.3925ZM18.1929 19.6067C18.5834 19.9972 19.2166 19.9972 19.6071 19.6067C19.9976 19.2162 19.9976 18.583 19.6071 18.1925L18.1929 19.6067ZM1.39287 18.1925C1.00234 18.583 1.00234 19.2162 1.39287 19.6067C1.78339 19.9972 2.41656 19.9972 2.80708 19.6067L1.39287 18.1925ZM19.6071 2.80672C19.9976 2.41619 19.9976 1.78303 19.6071 1.3925C19.2166 1.00198 18.5834 1.00198 18.1929 1.3925L19.6071 2.80672ZM1.39287 2.80672L18.1929 19.6067L19.6071 18.1925L2.80708 1.3925L1.39287 2.80672ZM2.80708 19.6067L19.6071 2.80672L18.1929 1.3925L1.39287 18.1925L2.80708 19.6067Z" fill="#333333"/>
+        </svg>
+    </button>
+    <button class="search-block__submit">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 19L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+<div class="search-block__loader loader">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+                </form>
+
+                <a href="" class="header__estimate" data-num="24">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V7.5L14.5 2Z" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 2V8H20" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 13H8" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 17H8" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 9H8" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="header__estimate-title">смета</span>
+                    <span class="header__estimate-num">2 568 167 ₽</span>
+                </a>
+                <div class="header-lk">
+                    <div class="header-lk__toggle header-lk__btn">
+                        <span class="header-lk__btn-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8.8C8 6.59086 9.79086 4.8 12 4.8C14.2091 4.8 16 6.59086 16 8.8C16 11.0091 14.2091 12.8 12 12.8C9.79086 12.8 8 11.0091 8 8.8Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM1.6 12C1.6 6.25624 6.25624 1.6 12 1.6C17.7438 1.6 22.4 6.25624 22.4 12C22.4 14.9593 21.164 17.6299 19.1801 19.5238C18.9385 16.6538 16.5324 14.4 13.6 14.4H10.4C7.46758 14.4 5.06152 16.6538 4.81995 19.5238C2.83601 17.6299 1.6 14.9593 1.6 12Z" fill="#333333"/>
+                            </svg>
+                        </span>
+                        <span class="header-lk__btn-title">Строймонолит Урал</span>
+                    </div>
+                    <div class="header-lk__dropdown">
+                        <div class="header-lk__links">
+                            <a href="" class="header-lk__link">
+                                <span class="header-lk__link-title">
+                                    Мои заказы
+                                    <span class="grey-text">(5)</span>
+                                </span>
+                            </a>
+                            <a href="" class="header-lk__link">
+                                <span class="header-lk__link-title">Документы</span>
+                                <i class="header-lk__notification"></i>
+                            </a>
+                        </div>
+                        <div class="header-lk__whatsapp">
+                            <a href="" class="header-lk__link">
+                                <span class="header-lk__link-title">Помощь в WhatsApp</span>
+                            </a>
+                        </div>
+                        <a href="" class="header-lk__logout">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<div class="your-city your-city--active">
+    <div class="your-city__top">
+        <div class="your-city__title">Ваш регион доставки</div>
+        <div class="your-city__desc">Екатеринбург</div>
+    </div>
+    <div class="your-city__buttons">
+        <button class="your-city__btn btn btn-yellow">Да</button>
+        <button class="your-city__btn btn btn-black-outline">Нет</button>
+    </div>
+</div>
+
+<section class='menu'>
+    <div class='menu__inner'>
+        <!--  menu__left--hide -->
+        <div class="menu__left">
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <div class="menu__left-inner">
+                <div class="menu__categories">
+                    <div class="menu__category menu__category--active" data-category="1">
+                        <span>Общегражданское и промышленное строительство</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="2">
+                        <span>Дорожное строительство</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="3">
+                        <span>Инженерная инфраструктура</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="4">
+                        <span>Энергетическое строительство</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="5">
+                        <span>Благоустройство территорий</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="6">
+                        <span>Железнодорожное строительство</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="7">
+                        <span>Нефтегазовое строительство</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="menu__category" data-category="8">
+                        <span>Спецпозиции</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L12 7L5 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__right">
+            <div class="menu__right-inner">
+                <!-- submenu-mob--active -->
+                <div class="submenu submenu--active" data-category="1">
+                    <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="2">
+                    2 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="3">
+                    3 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="4">
+                    4 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="5">
+                    5 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="6">
+                    6 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="7">
+                    7 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+                <div class="submenu" data-category="8">
+                    8 <div class="submenu__grid">
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="1">
+            <span class="submenu__title-text">Плиты перекрытия</span>
+            <span class="submenu__title-num">5</span>
+        </div>
+        <div class="submenu__items" data-submenu="1">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ИП</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия ПБ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты плоские перекрытия</span>
+                <span class="submenu__item-num">2</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты ребристые</span>
+                <span class="submenu__item-num">1</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Плиты перекрытия пустотные ПК</span>
+                <span class="submenu__item-num">99</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="2">
+            <span class="submenu__title-text">Изделия из стеклофибробетона</span>
+            <span class="submenu__title-num">115</span>
+        </div>
+        <div class="submenu__items" data-submenu="2">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Лестничные марши из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Фасадный декор из стеклофибробетона</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Колонны из стеклофибробетона</span>
+                <span class="submenu__item-num">157</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="3">
+            <span class="submenu__title-text">Панели</span>
+            <span class="submenu__title-num">3</span>
+        </div>
+        <div class="submenu__items" data-submenu="3">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панель из ячеистого бетона</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые шахт лифтов</span>
+                <span class="submenu__item-num">8</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели стеновые внутренние кровли теплого чердака ВСК 1-2</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака (контрфорс) 8КФ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Панели железобетонные внутренние чердака СВЧ, СВЧД, ВЧ</span>
+                <span class="submenu__item-num">158</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu__group">
+        <div class="submenu__title" data-submenu="4">
+            <span class="submenu__title-text">Огнеупорные изделия</span>
+            <span class="submenu__title-num">573</span>
+        </div>
+        <div class="submenu__items" data-submenu="4">
+            <div class="submenu__back2">
+                <span class="submenu__back2-title"></span>
+            </div>
+            <a href="" class="menu__all-products">Смотреть все товары</a>
+            <a href="" class="submenu__item">
+                <span class="submenu__item-title">Огнестойкие стеновые панели</span>
+                <span class="submenu__item-num">12</span>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="submenu__back">
+                        <span class="submenu__back-title"></span>
+                    </div>
+                    <a href="" class="menu__all">Все товары</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section> <section class='header-search'>
+    <div class='container'>
+        <div class='header-search__inner'>
+            <div class="header-search__title display2">Категории товаров</div>
+            <div class="header-search__items">
+                <div class="header-search__group">
+                    <div class="header-search__subtitle">
+                        Общегражданское и промышленное строительство
+                    </div>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты перек</span>рытия ИП</span>
+                        <span class="header-search__item-num">12</span>
+                    </a>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты перек</span>рытия ПБ</span>
+                        <span class="header-search__item-num">158</span>
+                    </a>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты</span> плоские <span>перек</span>рытия</span>
+                        <span class="header-search__item-num">2</span>
+                    </a>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты</span> перекрытия пустотные ПК</span>
+                        <span class="header-search__item-num">99</span>
+                    </a>
+                </div>
+                <div class="header-search__group">
+                    <div class="header-search__subtitle">Энергетическое строительство</div>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты перек</span>рытия прямоугольных труб</span>
+                        <span class="header-search__item-num">18</span>
+                    </a>
+                    <a href="" class="header-search__item">
+                        <span class="header-search__item-title"><span>Плиты перек</span>рытия с переменной высотой (ПНОС)</span>
+                        <span class="header-search__item-num">5</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-search__results">
+                <div class="header-search__title display2">Найден: 541 товар</div>
+                <div class="header-search__results-items">
+                    <div class="search-card">
+                        <a href="" class="search-card__img">
+    <img src="img/catalog.webp" alt="">
+</a>
+<div class="search-card__info">
+    <a href="" class="search-card__title">Плита перекрытия ПК 24-10-8</a>
+    <div class="search-card__art">арт. 1568710135</div>
+</div>
+<div class='cartcalc search-card__calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+<div class="search-card__action">
+    <div class="search-card__price">3 634 руб.</div>
+    <div class="search-card__nav">
+        <button class="search-card__order btn btn-yellow">Заказать</button>
+        <button class="search-card__estimate btn btn-black-outline">
+            <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6875 1.75H16.25C15.7859 1.75 15.3408 1.93437 15.0126 2.26256C14.6844 2.59075 14.5 3.03587 14.5 3.5V17.5C14.5 17.9641 14.6844 18.4092 15.0126 18.7374C15.3408 19.0656 15.7859 19.25 16.25 19.25H26.75C27.2141 19.25 27.6592 19.0656 27.9874 18.7374C28.3156 18.4092 28.5 17.9641 28.5 17.5V6.5625L23.6875 1.75Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M23.25 1.75V7H28.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 11.375H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 14.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.75 7.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.4375 7C5.4375 6.72386 5.21364 6.5 4.9375 6.5C4.66136 6.5 4.4375 6.72386 4.4375 7H5.4375ZM4.4375 14.875C4.4375 15.1511 4.66136 15.375 4.9375 15.375C5.21364 15.375 5.4375 15.1511 5.4375 14.875H4.4375ZM4.4375 7V14.875H5.4375V7H4.4375Z" fill="#333333"></path>
+                <path d="M1 10.4375C0.723858 10.4375 0.5 10.6614 0.5 10.9375C0.5 11.2136 0.723858 11.4375 1 11.4375V10.4375ZM8.875 11.4375C9.15114 11.4375 9.375 11.2136 9.375 10.9375C9.375 10.6614 9.15114 10.4375 8.875 10.4375V11.4375ZM1 11.4375H8.875V10.4375H1V11.4375Z" fill="#333333"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+                    </div>
+                    <div class="search-card">
+                        <a href="" class="search-card__img">
+    <img src="img/catalog.webp" alt="">
+</a>
+<div class="search-card__info">
+    <a href="" class="search-card__title">Плита перекрытия ПК 24-10-8</a>
+    <div class="search-card__art">арт. 1568710135</div>
+</div>
+<div class='cartcalc search-card__calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+<div class="search-card__action">
+    <div class="search-card__price">3 634 руб.</div>
+    <div class="search-card__nav">
+        <button class="search-card__order btn btn-yellow">Заказать</button>
+        <button class="search-card__estimate btn btn-black-outline">
+            <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6875 1.75H16.25C15.7859 1.75 15.3408 1.93437 15.0126 2.26256C14.6844 2.59075 14.5 3.03587 14.5 3.5V17.5C14.5 17.9641 14.6844 18.4092 15.0126 18.7374C15.3408 19.0656 15.7859 19.25 16.25 19.25H26.75C27.2141 19.25 27.6592 19.0656 27.9874 18.7374C28.3156 18.4092 28.5 17.9641 28.5 17.5V6.5625L23.6875 1.75Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M23.25 1.75V7H28.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 11.375H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 14.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.75 7.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.4375 7C5.4375 6.72386 5.21364 6.5 4.9375 6.5C4.66136 6.5 4.4375 6.72386 4.4375 7H5.4375ZM4.4375 14.875C4.4375 15.1511 4.66136 15.375 4.9375 15.375C5.21364 15.375 5.4375 15.1511 5.4375 14.875H4.4375ZM4.4375 7V14.875H5.4375V7H4.4375Z" fill="#333333"></path>
+                <path d="M1 10.4375C0.723858 10.4375 0.5 10.6614 0.5 10.9375C0.5 11.2136 0.723858 11.4375 1 11.4375V10.4375ZM8.875 11.4375C9.15114 11.4375 9.375 11.2136 9.375 10.9375C9.375 10.6614 9.15114 10.4375 8.875 10.4375V11.4375ZM1 11.4375H8.875V10.4375H1V11.4375Z" fill="#333333"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+                    </div>
+                    <div class="search-card">
+                        <a href="" class="search-card__img">
+    <img src="img/catalog.webp" alt="">
+</a>
+<div class="search-card__info">
+    <a href="" class="search-card__title">Плита перекрытия ПК 24-10-8</a>
+    <div class="search-card__art">арт. 1568710135</div>
+</div>
+<div class='cartcalc search-card__calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+<div class="search-card__action">
+    <div class="search-card__price">3 634 руб.</div>
+    <div class="search-card__nav">
+        <button class="search-card__order btn btn-yellow">Заказать</button>
+        <button class="search-card__estimate btn btn-black-outline">
+            <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6875 1.75H16.25C15.7859 1.75 15.3408 1.93437 15.0126 2.26256C14.6844 2.59075 14.5 3.03587 14.5 3.5V17.5C14.5 17.9641 14.6844 18.4092 15.0126 18.7374C15.3408 19.0656 15.7859 19.25 16.25 19.25H26.75C27.2141 19.25 27.6592 19.0656 27.9874 18.7374C28.3156 18.4092 28.5 17.9641 28.5 17.5V6.5625L23.6875 1.75Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M23.25 1.75V7H28.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 11.375H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 14.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.75 7.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.4375 7C5.4375 6.72386 5.21364 6.5 4.9375 6.5C4.66136 6.5 4.4375 6.72386 4.4375 7H5.4375ZM4.4375 14.875C4.4375 15.1511 4.66136 15.375 4.9375 15.375C5.21364 15.375 5.4375 15.1511 5.4375 14.875H4.4375ZM4.4375 7V14.875H5.4375V7H4.4375Z" fill="#333333"></path>
+                <path d="M1 10.4375C0.723858 10.4375 0.5 10.6614 0.5 10.9375C0.5 11.2136 0.723858 11.4375 1 11.4375V10.4375ZM8.875 11.4375C9.15114 11.4375 9.375 11.2136 9.375 10.9375C9.375 10.6614 9.15114 10.4375 8.875 10.4375V11.4375ZM1 11.4375H8.875V10.4375H1V11.4375Z" fill="#333333"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+                    </div>
+                    <div class="search-card">
+                        <a href="" class="search-card__img">
+    <img src="img/catalog.webp" alt="">
+</a>
+<div class="search-card__info">
+    <a href="" class="search-card__title">Плита перекрытия ПК 24-10-8</a>
+    <div class="search-card__art">арт. 1568710135</div>
+</div>
+<div class='cartcalc search-card__calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+<div class="search-card__action">
+    <div class="search-card__price">3 634 руб.</div>
+    <div class="search-card__nav">
+        <button class="search-card__order btn btn-yellow">Заказать</button>
+        <button class="search-card__estimate btn btn-black-outline">
+            <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6875 1.75H16.25C15.7859 1.75 15.3408 1.93437 15.0126 2.26256C14.6844 2.59075 14.5 3.03587 14.5 3.5V17.5C14.5 17.9641 14.6844 18.4092 15.0126 18.7374C15.3408 19.0656 15.7859 19.25 16.25 19.25H26.75C27.2141 19.25 27.6592 19.0656 27.9874 18.7374C28.3156 18.4092 28.5 17.9641 28.5 17.5V6.5625L23.6875 1.75Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M23.25 1.75V7H28.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 11.375H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 14.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.75 7.875H18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.4375 7C5.4375 6.72386 5.21364 6.5 4.9375 6.5C4.66136 6.5 4.4375 6.72386 4.4375 7H5.4375ZM4.4375 14.875C4.4375 15.1511 4.66136 15.375 4.9375 15.375C5.21364 15.375 5.4375 15.1511 5.4375 14.875H4.4375ZM4.4375 7V14.875H5.4375V7H4.4375Z" fill="#333333"></path>
+                <path d="M1 10.4375C0.723858 10.4375 0.5 10.6614 0.5 10.9375C0.5 11.2136 0.723858 11.4375 1 11.4375V10.4375ZM8.875 11.4375C9.15114 11.4375 9.375 11.2136 9.375 10.9375C9.375 10.6614 9.15114 10.4375 8.875 10.4375V11.4375ZM1 11.4375H8.875V10.4375H1V11.4375Z" fill="#333333"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+                    </div>
+                </div>
+                <a href="" class="header-search__all btn btn-yellow">Посмотреть все результаты</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <main class="content">
+
+            <section class='auth'>
+                <div class='container'>
+                    <div class='auth__inner'>
+                        <h1 class="auth__title display2">Войдите или зарегистрируйтесь</h1>
+                        <form action="" class="auth__form">
+                            <fieldset class='form-group'>
+                                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+                            </fieldset>
+                            <div class="auth__check check">
+                                <input type="checkbox">
+                                <label>
+                                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                                </label>
+                            </div>
+                            <button class="auth__btn btn btn-yellow">Получить код по смс </button>
+                            <div class="auth__nav">
+                                <a href="" class="auth__link">Войти по паролю/e-mail</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <section class='consult'>
+    <div class='container'>
+        <div class='consult__inner'>
+            <div class="consult__title display3">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36 3L18 21" stroke="#FFCC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M36 3L24.45 36L17.85 21.15L3 14.55L36 3Z" stroke="#FFCC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Подписывайтесь на новости и акции</span>
+            </div>
+            <form action="" class="consult__form">
+                <fieldset class='consult__form-group form-group form-group--dark'>
+                    <input type='email' />
+<label>Введите почту</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+                </fieldset>
+                <button class="consult__btn btn btn-yellow">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class='footer'>
+    <div class='container'>
+        <div class='footer__top'>
+            <div class="footer__left">
+                <a href="" class="footer__title">Каталог ЖБИ</a>
+                <div class="footer__links">
+                    <div class="footer__links-group footer__links-group--hide">
+                        <a href="" class="footer__link">Тепловые сети и канализация</a>
+                        <a href="" class="footer__link">Энергетическое строительство</a>
+                        <a href="" class="footer__link">Дорожное строительство</a>
+                        <a href="" class="footer__link">Общегражданское и промышленное строительство</a>
+                        <a href="" class="footer__link">Железнодорожное строительство</a>
+                        <a href="" class="footer__link">Мостостроение</a>
+                    </div>
+                    <div class="footer__links-group footer__links-group--hide">
+                        <a href="" class="footer__link">Нефтегазовое строительство</a>
+                        <a href="" class="footer__link">Берегоукрепление</a>
+                        <a href="" class="footer__link">Благоустройство</a>
+                        <a href="" class="footer__link">Спецпозиции</a>
+                        <a href="" class="footer__link">Изделия из архитектурного бетона</a>
+                        <a href="" class="footer__link">Изделия из стеклофибробетона</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__col">
+                    <div class="footer__title footer__title--hide">Компания</div>
+                    <div class="footer__links-group">
+                        <a href="" class="footer__link">Доставка и оплата</a>
+                        <a href="" class="footer__link">Выполненные проекты</a>
+                        <a href="" class="footer__link">О компании</a>
+                        <a href="" class="footer__link">Блог</a>
+                        <a href="" class="footer__link">Кешбэк</a>
+                        <a href="" class="footer__link">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--230">
+                    <a href="tel:+73432887022" class="footer__link2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM12.6642 8.73267C12.6156 8.33754 12.4941 8.02728 12.2784 7.75247C11.9984 7.3986 11.6405 7.1867 11.1106 7.061C10.7653 6.97722 10.6258 6.98684 10.5009 7.10092C10.3846 7.2078 10.3619 7.42207 10.4508 7.56082C10.5133 7.66153 10.5854 7.69761 10.786 7.73698C11.0531 7.78613 11.2377 7.84992 11.4057 7.94593C11.7621 8.15174 11.9281 8.4738 11.9459 8.99519C11.9542 9.24 11.9753 9.31527 12.0608 9.40209C12.2193 9.56081 12.5013 9.52994 12.621 9.34001C12.6649 9.26842 12.6716 9.23726 12.6762 9.07103C12.6793 8.96811 12.6749 8.81493 12.6642 8.73267ZM12.669 6.3084C13.5164 6.99366 13.9899 7.96762 14.0603 9.17819C14.0899 9.655 14.0505 9.81028 13.8823 9.89875C13.7305 9.9807 13.5585 9.95372 13.4406 9.83033C13.3624 9.75008 13.3324 9.64031 13.3335 9.44594C13.337 8.90854 13.2132 8.30841 13.0118 7.89197C12.7789 7.4073 12.4187 6.99484 11.9657 6.69329C11.5688 6.42844 11.0436 6.24953 10.5344 6.20498C10.2041 6.17609 10.0861 6.12014 10.0227 5.9618C9.98347 5.86708 9.99385 5.70333 10.0399 5.62998C10.0834 5.56235 10.1811 5.48756 10.2502 5.46779C10.3234 5.44644 10.75 5.48377 10.9818 5.52982C11.6144 5.65858 12.1915 5.92335 12.669 6.3084ZM15.6051 13.8401C15.5814 13.7709 15.5262 13.6642 15.4867 13.6029C15.238 13.2274 13.9019 12.1818 13.2348 11.8398C12.8539 11.6441 12.5717 11.5789 12.3625 11.6402C12.1375 11.7034 12.019 11.8082 11.6421 12.2766C11.4901 12.4644 11.3342 12.6403 11.2928 12.668C11.1901 12.7392 10.9888 12.7965 10.8467 12.7965C10.5171 12.7945 9.91911 12.581 9.45926 12.3003C9.10203 12.0829 8.64418 11.6936 8.29285 11.3081C7.87838 10.8555 7.59618 10.4562 7.37314 10.0055C7.08501 9.42638 7.01198 9.07256 7.13236 8.81361C7.16197 8.74839 7.20145 8.67923 7.21919 8.65745C7.23696 8.63772 7.42249 8.4855 7.62772 8.31946C8.03036 7.99927 8.09548 7.92613 8.17048 7.70672C8.26521 7.42801 8.23957 7.14338 8.09352 6.85678C7.98101 6.63935 7.68695 6.16497 7.4738 5.8586C7.19157 5.45538 6.48896 4.59358 6.34882 4.47693C6.0962 4.27138 5.77255 4.23578 5.41529 4.37417C5.03837 4.52045 4.33179 5.0897 4.02982 5.48701C3.75746 5.84674 3.65289 6.10171 3.63708 6.43774C3.62328 6.71445 3.64695 6.8291 3.793 7.18292C4.93573 9.95807 6.64091 12.1739 8.98362 13.9331C10.2073 14.8522 11.4763 15.5519 12.7927 16.0302C13.5604 16.3089 13.894 16.3228 14.2867 16.0935C14.4525 15.9946 14.863 15.5736 15.0919 15.2673C15.4709 14.7573 15.611 14.5221 15.6505 14.3343C15.6781 14.2058 15.6564 13.9825 15.6051 13.8401ZM15.1005 7.58356C15.3409 8.20978 15.4562 8.77145 15.4814 9.45622C15.4855 9.5915 15.4836 9.83934 15.4748 10.0072C15.4566 10.3291 15.4391 10.393 15.3465 10.4782C15.1975 10.6179 14.9073 10.5846 14.7972 10.4162C14.7397 10.3259 14.7316 10.2597 14.7427 9.88365C14.7747 8.77137 14.5497 7.90048 14.0078 7.02965C13.3602 5.98487 12.3916 5.28106 11.132 4.93674C10.8108 4.84909 10.5401 4.79568 10.1191 4.739C9.84484 4.7031 9.78478 4.68793 9.7171 4.64627C9.51263 4.51531 9.50991 4.1837 9.71374 4.05074C9.81892 3.98056 9.89648 3.97742 10.2393 4.02133C11.2447 4.14696 12.1417 4.44569 12.8789 4.89711C13.4072 5.2211 13.7404 5.51216 14.1693 6.02192C14.6229 6.5656 14.8631 6.96756 15.1005 7.58356Z" fill="white"/>
+                        </svg>
+                        <span>+7 (343) 288 70 22</span>
+                    </a>
+                    <a href="mailto:zakaz@air-ekb.com" class="footer__link2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM4.16667 9.98345C4.16667 6.77606 6.78343 4.16667 9.99992 4.16667C13.2164 4.16667 15.8332 6.77606 15.8332 9.98345C15.8332 10.4378 15.7953 10.8057 15.7103 11.1749L15.7091 11.181C15.7089 11.1821 15.6667 11.3523 15.6434 11.4265C15.4993 11.8863 15.2382 12.2693 14.8885 12.534C14.5494 12.7907 14.1289 12.9321 13.7046 12.9321C13.6522 12.9321 13.5994 12.93 13.5477 12.9259C12.9451 12.8776 12.4152 12.5614 12.0903 12.0572C11.5315 12.6175 10.7902 12.9257 9.99992 12.9257C8.37297 12.9257 7.04934 11.6058 7.04934 9.98345C7.04934 8.36109 8.37297 7.04122 9.99992 7.04122C11.6269 7.04122 12.9505 8.36109 12.9505 9.98345V10.9319C12.9529 11.4853 13.3254 11.7115 13.6435 11.7371C13.9601 11.7615 14.3813 11.5776 14.5281 10.9775C14.6005 10.6484 14.6372 10.3139 14.6372 9.98345C14.6372 7.43362 12.5569 5.35922 9.99992 5.35922C7.44289 5.35922 5.36262 7.43362 5.36262 9.98345C5.36262 12.5333 7.44289 14.6077 9.99992 14.6077C10.89 14.6077 11.7557 14.3542 12.5033 13.8746L12.5167 13.866L13.3025 14.7771L13.2857 14.7886C12.3145 15.4504 11.1783 15.8003 9.99992 15.8003C6.78343 15.8003 4.16667 13.1909 4.16667 9.98345Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7545 9.98345C11.7545 10.9482 10.9674 11.7332 9.99992 11.7332C9.03239 11.7332 8.2453 10.9482 8.2453 9.98345C8.2453 9.01869 9.03239 8.23381 9.99992 8.23381C10.9674 8.23381 11.7545 9.01869 11.7545 9.98345Z" fill="white"/>
+                        </svg>
+                        <span>zakaz@air-ekb.com</span>
+                    </a>
+                    <a href="" class="footer__link2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10.3296 15.5635C13.6081 15.5622 16.2746 12.8951 16.2759 9.61729C16.2765 8.02847 15.6586 6.53451 14.5359 5.41059C13.4133 4.28661 11.9203 3.66735 10.3296 3.66667C7.05201 3.66667 4.38449 6.33404 4.38319 9.6126C4.38274 10.6606 4.65656 11.6835 5.17692 12.5854L4.33333 15.6667L7.48556 14.8398C8.35408 15.3135 9.33196 15.5632 10.3272 15.5635H10.3296Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.63117 13.7632L5.7606 14.2539L6.25988 12.4301L6.14237 12.2431C5.64763 11.4562 5.38634 10.5467 5.38672 9.61283C5.3878 6.88784 7.60495 4.6709 10.3311 4.6709C11.6512 4.67136 12.8921 5.18609 13.8253 6.12029C14.7584 7.0545 15.272 8.29622 15.2714 9.61683C15.2704 12.342 13.0532 14.5592 10.3292 14.5592H10.3272C9.44031 14.5588 8.57047 14.3206 7.81165 13.8703L7.63117 13.7632ZM13.3249 11.0312C13.2878 10.9692 13.1887 10.932 13.0401 10.8576C12.8916 10.7833 12.1611 10.4239 12.0249 10.3742C11.8887 10.3247 11.7896 10.2999 11.6906 10.4486C11.5915 10.5973 11.3068 10.932 11.2201 11.0312C11.1335 11.1303 11.0468 11.1428 10.8983 11.0684C10.7497 10.994 10.2709 10.8371 9.70341 10.3309C9.26172 9.93693 8.96353 9.45041 8.87686 9.30166C8.79019 9.15291 8.86762 9.07252 8.942 8.99843C9.00885 8.93184 9.09059 8.82485 9.16488 8.73812C9.23916 8.65139 9.26392 8.58937 9.31345 8.49028C9.36297 8.39108 9.33821 8.30434 9.30106 8.22997C9.26392 8.15559 8.96678 7.42426 8.84297 7.12676C8.72236 6.83704 8.59987 6.87629 8.50868 6.87171C8.42211 6.86736 8.32295 6.86645 8.22391 6.86645C8.12487 6.86645 7.96389 6.90364 7.8277 7.05238C7.69152 7.20113 7.30769 7.56059 7.30769 8.29187C7.30769 9.02321 7.84008 9.72971 7.91437 9.82886C7.98866 9.92806 8.96205 11.4288 10.4525 12.0723C10.807 12.2254 11.0837 12.3168 11.2995 12.3853C11.6555 12.4984 11.9794 12.4825 12.2353 12.4442C12.5208 12.4015 13.1144 12.0848 13.2383 11.7377C13.362 11.3906 13.362 11.0931 13.3249 11.0312Z" fill="white"/>
+                        </svg>
+                        <span>Написать в WhatsApp</span>
+                    </a>
+                    <a href="" class="footer__link2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM10.0005 4.66667C8.55204 4.66667 8.37026 4.673 7.80137 4.69889C7.23358 4.72489 6.84602 4.81478 6.50691 4.94667C6.15613 5.08289 5.85857 5.26512 5.56212 5.56168C5.26545 5.85812 5.08323 6.15568 4.94656 6.50635C4.81433 6.84558 4.72433 7.23325 4.69878 7.80081C4.67333 8.36971 4.66667 8.5516 4.66667 10.0001C4.66667 11.4485 4.67311 11.6297 4.69889 12.1986C4.725 12.7664 4.81489 13.154 4.94667 13.4931C5.083 13.8439 5.26523 14.1414 5.56179 14.4379C5.85812 14.7345 6.15568 14.9172 6.50624 15.0534C6.84558 15.1853 7.23325 15.2752 7.80092 15.3012C8.36982 15.3271 8.55148 15.3334 9.99983 15.3334C11.4484 15.3334 11.6296 15.3271 12.1985 15.3012C12.7663 15.2752 13.1543 15.1853 13.4936 15.0534C13.8443 14.9172 14.1414 14.7345 14.4378 14.4379C14.7344 14.1414 14.9167 13.8439 15.0533 13.4932C15.1844 13.154 15.2744 12.7663 15.3011 12.1987C15.3267 11.6299 15.3333 11.4485 15.3333 10.0001C15.3333 8.5516 15.3267 8.36982 15.3011 7.80092C15.2744 7.23314 15.1844 6.84558 15.0533 6.50646C14.9167 6.15568 14.7344 5.85812 14.4378 5.56168C14.1411 5.26501 13.8444 5.08278 13.4933 4.94667C13.1533 4.81478 12.7655 4.72489 12.1977 4.69889C11.6289 4.673 11.4477 4.66667 9.99883 4.66667H10.0005Z" fill="#fff"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52205 5.62779C9.66405 5.62757 9.8225 5.62779 10.0005 5.62779C11.4245 5.62779 11.5933 5.6329 12.1556 5.65845C12.6756 5.68223 12.9579 5.76912 13.1459 5.84212C13.3948 5.93879 13.5722 6.05435 13.7588 6.24102C13.9454 6.42768 14.061 6.60546 14.1579 6.85436C14.2309 7.04214 14.3179 7.32436 14.3415 7.84437C14.3671 8.40659 14.3727 8.57549 14.3727 9.99883C14.3727 11.4222 14.3671 11.5911 14.3415 12.1533C14.3178 12.6733 14.2309 12.9555 14.1579 13.1433C14.0612 13.3922 13.9454 13.5694 13.7588 13.756C13.5721 13.9427 13.3949 14.0582 13.1459 14.1549C12.9581 14.2282 12.6756 14.3149 12.1556 14.3387C11.5934 14.3642 11.4245 14.3698 10.0005 14.3698C8.57637 14.3698 8.40759 14.3642 7.84537 14.3387C7.32536 14.3147 7.04314 14.2278 6.85502 14.1548C6.60613 14.0581 6.42835 13.9425 6.24168 13.7559C6.05501 13.5692 5.93946 13.3919 5.84257 13.1429C5.76957 12.9551 5.68257 12.6729 5.6589 12.1529C5.63334 11.5906 5.62823 11.4217 5.62823 9.9975C5.62823 8.57326 5.63334 8.40526 5.6589 7.84303C5.68268 7.32303 5.76957 7.0408 5.84257 6.8528C5.93924 6.60391 6.05501 6.42613 6.24168 6.23946C6.42835 6.05279 6.60613 5.93724 6.85502 5.84035C7.04302 5.76701 7.32536 5.68034 7.84537 5.65645C8.33737 5.63423 8.52804 5.62757 9.52205 5.62645V5.62779ZM12.8474 6.51335C12.4941 6.51335 12.2074 6.79969 12.2074 7.15314C12.2074 7.50647 12.4941 7.79314 12.8474 7.79314C13.2008 7.79314 13.4874 7.50647 13.4874 7.15314C13.4874 6.7998 13.2008 6.51335 12.8474 6.51335ZM10.0005 7.26114C8.48793 7.26114 7.26158 8.48748 7.26158 10.0001C7.26158 11.5126 8.48793 12.7384 10.0005 12.7384C11.5131 12.7384 12.739 11.5126 12.739 10.0001C12.739 8.48748 11.5131 7.26114 10.0005 7.26114Z" fill="#fff"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0005 8.22226C10.9823 8.22226 11.7783 9.01816 11.7783 10.0001C11.7783 10.9818 10.9823 11.7779 10.0005 11.7779C9.0186 11.7779 8.2227 10.9818 8.2227 10.0001C8.2227 9.01816 9.0186 8.22226 10.0005 8.22226Z" fill="#fff"/>
+                        </svg>
+                        <span>Перейти в Instagram</span>
+                    </a>
+                    <div class="footer__time">
+                        пн-пт c 9:00 до 18:00 <br> сб-вс выходной
+                    </div>
+                    <div class="footer__address">г. Екатеринбург, ул. Фронтовых Бригад д. 31, офис 301</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <div class="footer__logo">
+                    <img src="img/logo2.svg" alt="">
+                </div>
+                <div class="footer__info">
+                    Сайт не является офертой. Актуальные цены и наличие товаров уточняйте по телефону или в мессенджерах.
+                </div>
+            </div>
+            <div class="footer__bottom-right">
+                <a href="" class="footer__conf">Политика конфиденциальности</a>
+                <a href="" class="footer__design">Дизайн: loginova.me</a>
+            </div>
+        </div>
+    </div>
+    <button class="scroll-up">
+        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.95605 13.261L11.9995 1.78271L22.043 13.261" stroke="#939393" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+</footer>
+
+<div class="cookies">
+    <div class="cookies__title">
+        Мы используем файлы cookie. Продолжая просмотр страниц нашего сайта, <br> вы принимаете <a href="" class="text-link">условия его использования</a> .
+    </div>
+    <button class="cookies__btn btn btn-yellow">Принимаю условия</button>
+</div>
+    </div>
+    <div class="modal" id="quickOrder" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Быстрый заказ</div>
+        <div class="modal__desc">После отправки заказа, специалист свяжется с вами в течение 30 минут.</div>
+
+        <div class="modal__product">
+            <a href="" class="modal__product-img">
+                <img src="img/product.webp" alt="">
+            </a>
+            <a href="" class="modal__product-title">Плита перекрытия ПК 24-10-8</a> <div class='cartcalc modal__product-calc'>
+    <button class='ccalc-minus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.933594 7.50098H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+    <input type='number' value='1'>
+    <button class='ccalc-plus btn'>
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.00026 1.43457V13.5679M0.933594 7.50124H13.0669" stroke="#333333" stroke-width="2"/>
+        </svg>
+    </button>
+</div>
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal" id="consultModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Получить консультацию</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут. Проконсультирует по наличию, стоимости и условиям доставки.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal" id="estimateModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Просчет сметы</div>
+        <div class="modal__desc">После отправки сметы, специались в течение 30 минут подберёт самые оптимальные варианты по стоимости и срокам. Ответ придёт вам на почту.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal" id="indevidualModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Индивидуальное производство</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение 30 минут.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Письмо директору</div>
+        <div class="modal__desc">Нам важна обратная связь, благодаря ей мы меняемся в лучшую сторону. После отправки директор свяжется с вами в течение рабочего дня.</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Имя*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='email' />
+<label>Почта*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='tel' />
+<label>Телефон*</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <textarea placeholder="Напишите ваш вопрос или пожелания."></textarea>
+<label>Ваш комментарий</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+            </fieldset>
+            <div class="file-input">
+                <div class="file-input__drop-area">
+    <input type="file">
+    <label>
+        <span>
+            Перетащите сюда или <span>загрузите</span> файлы
+        </span>
+    </label>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploading">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Название документа
+            </span>
+            <span class="file-input__upload-format">
+                .pdf
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-clip">
+        <img src="img/clip.svg" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Супер длинное название документа, котоsdssdssd105
+            </span>
+            <span class="file-input__upload-format">
+                .jpg
+            </span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="file-input__upload file-input__upload--uploaded">
+    <div class="file-input__upload-img">
+        <img src="img/upload-img2.webp" alt="">
+    </div>
+    <div class="file-input__upload-left">
+        <div class="file-input__upload-title">
+            <span class="file-input__upload-cut">
+                Загруженное фото
+            </span>
+            <span class="file-input__upload-format">
+                .png
+            </span>
+        </div>
+        <div class="file-input__upload-progress">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+    <button class="file-input__upload-cancel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 8.39961L1.59961 2.3564L2.3564 1.59961L8.39961 7.64282L14.4428 1.59961L15.1996 2.3564L9.1564 8.39961L15.1996 14.4428L14.4428 15.1996L8.39961 9.1564L2.3564 15.1996L1.59961 14.4428L7.64282 8.39961Z" fill="#333333"/>
+        </svg>
+    </button>
+</div>
+
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>Превышен размер файла (максимум 10 мб). Вы можете отправить все документы без ограничений на нашу почту zakaz@ruzhbi.ru</span>
+</div>
+            </div>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal modal-thanks" id="thanksModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за заказ!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks" id="thanksModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Благодарим за обращение!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-thanks" id="thanksModal3" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Вы успешно подписались на нашу рассылку!</div>
+        <div class="modal__desc"> Свяжимся с вами в течение 30 минут</div>
+    </div>
+</div>
+
+<div class="modal modal-city" id="cityModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal-city__title display2">Выберите город</div>
+        <form class="search-block modal-city__search form-group">
+            <input type="text" placeholder="Введите название города">
+            <!--  -->
+            <div class="search-block__nav">
+    <button type="reset" class="search-block__reset">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.80708 1.3925C2.41656 1.00198 1.78339 1.00198 1.39287 1.3925C1.00234 1.78303 1.00234 2.41619 1.39287 2.80672L2.80708 1.3925ZM18.1929 19.6067C18.5834 19.9972 19.2166 19.9972 19.6071 19.6067C19.9976 19.2162 19.9976 18.583 19.6071 18.1925L18.1929 19.6067ZM1.39287 18.1925C1.00234 18.583 1.00234 19.2162 1.39287 19.6067C1.78339 19.9972 2.41656 19.9972 2.80708 19.6067L1.39287 18.1925ZM19.6071 2.80672C19.9976 2.41619 19.9976 1.78303 19.6071 1.3925C19.2166 1.00198 18.5834 1.00198 18.1929 1.3925L19.6071 2.80672ZM1.39287 2.80672L18.1929 19.6067L19.6071 18.1925L2.80708 1.3925L1.39287 2.80672ZM2.80708 19.6067L19.6071 2.80672L18.1929 1.3925L1.39287 18.1925L2.80708 19.6067Z" fill="#333333"/>
+        </svg>
+    </button>
+    <button class="search-block__submit">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 19L15 15" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+<div class="search-block__loader loader">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        </form>
+
+        <div class="modal-city__bottom">
+            <div class="modal-city__suggest">
+                <div class="modal-city__suggest-item">Москва</div>
+                <div class="modal-city__suggest-item modal-city__suggest-item--active">Екатеринбург</div>
+                <div class="modal-city__suggest-item">Пермь</div>
+            </div>
+            <div class="modal-city__letters">
+                <a href="#group1" class="modal-city__letter">А</a>
+                <a href="#group2" class="modal-city__letter">Б</a>
+                <a href="#group3" class="modal-city__letter">В</a>
+                <a href="#group4" class="modal-city__letter">Г</a>
+                <a href="#group5" class="modal-city__letter">Е</a>
+                <a href="#group6" class="modal-city__letter">И</a>
+                <a href="" class="modal-city__letter">К</a>
+                <a href="" class="modal-city__letter">Л</a>
+                <a href="" class="modal-city__letter">М</a>
+                <a href="" class="modal-city__letter">Н</a>
+                <a href="" class="modal-city__letter">О</a>
+                <a href="" class="modal-city__letter">П</a>
+                <a href="" class="modal-city__letter">Р</a>
+                <a href="" class="modal-city__letter">С</a>
+                <a href="" class="modal-city__letter">Т</a>
+                <a href="" class="modal-city__letter">У</a>
+                <a href="" class="modal-city__letter">Ф</a>
+                <a href="" class="modal-city__letter">Х</a>
+                <a href="" class="modal-city__letter">Ч</a>
+                <a href="" class="modal-city__letter">Ш</a>
+                <a href="" class="modal-city__letter">Ю</a>
+                <a href="" class="modal-city__letter">Я</a>
+            </div>
+
+            <div class="modal-city__scroll">
+                <div class="modal-city__groups">
+                    <div id="group1" class="modal-city__group">
+                        <div class="modal-city__group-title">А</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group2" class="modal-city__group">
+                        <div class="modal-city__group-title">Б</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group3" class="modal-city__group">
+                        <div class="modal-city__group-title">В</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group4" class="modal-city__group">
+                        <div class="modal-city__group-title">Г</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group5" class="modal-city__group">
+                        <div class="modal-city__group-title">Д</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                    <div id="group6" class="modal-city__group">
+                        <div class="modal-city__group-title">Е</div>
+                        <div class="modal-city__list">
+                            <div class="modal-city__item">Абакан</div>
+                            <div class="modal-city__item">Арамиль</div>
+                            <div class="modal-city__item">Армавир</div>
+                            <div class="modal-city__item">Архангельск</div>
+                            <div class="modal-city__item">Алушта</div>
+                            <div class="modal-city__item">Ардон</div>
+                            <div class="modal-city__item">Арти</div>
+                            <div class="modal-city__item">Астрахань</div>
+                            <div class="modal-city__item">Анапа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal share-modal" id="share" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="share-modal__title display2">Поделиться</div>
+        <div class="share-modal__socials">
+            <a href="" class="share-modal__socials-item">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="30" fill="#4680C2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.0402 21.6514C49.3366 20.7199 49.0402 20.0424 47.7276 20.0424H43.3662C42.2654 20.0424 41.7572 20.6351 41.4609 21.2704C41.4609 21.2704 39.2166 26.6902 36.0832 30.2046C35.067 31.2209 34.6012 31.5596 34.0509 31.5596C33.7544 31.5596 33.3734 31.2209 33.3734 30.2894V21.609C33.3734 20.5081 33.0346 20 32.103 20H25.2435C24.566 20 24.1426 20.5081 24.1426 21.0163C24.1426 22.0749 25.7092 22.3289 25.8786 25.2929V31.729C25.8786 33.1264 25.6246 33.3804 25.0741 33.3804C23.5921 33.3804 19.993 27.9181 17.8335 21.6938C17.41 20.4658 16.9866 20 15.8857 20H11.482C10.2117 20 10 20.5929 10 21.228C10 22.3712 11.482 28.1299 16.9019 35.7516C20.5011 40.9598 25.6246 43.7544 30.24 43.7544C33.0346 43.7544 33.3734 43.1192 33.3734 42.0607V38.1229C33.3734 36.8525 33.6274 36.6409 34.5166 36.6409C35.1517 36.6409 36.295 36.9795 38.8779 39.4778C41.8419 42.4417 42.35 43.7967 44.0014 43.7967H48.3627C49.633 43.7967 50.2259 43.1616 49.8871 41.9336C49.506 40.7057 48.0664 38.9274 46.2032 36.8101C45.187 35.6246 43.6626 34.312 43.1969 33.6767C42.5617 32.83 42.7311 32.4913 43.1969 31.729C43.1546 31.729 48.4897 24.192 49.0402 21.6514Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="" class="share-modal__socials-item">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#25D366"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9888 46.6906H30.9815C27.9959 46.6896 25.0623 45.9405 22.4567 44.5193L13 47L15.5308 37.7561C13.9697 35.0506 13.1482 31.9819 13.1496 28.8378C13.1535 19.0021 21.156 11 30.9887 11C35.7608 11.0021 40.2398 12.8598 43.6078 16.2318C46.9757 19.6035 48.8296 24.0854 48.8277 28.8519C48.8237 38.6853 40.8244 46.6866 30.9888 46.6906ZM22.8948 41.2899L23.4363 41.6112C25.7127 42.9621 28.3222 43.6769 30.9828 43.6779H30.9888C39.1611 43.6779 45.8124 37.0264 45.8157 28.8508C45.8172 24.889 44.2764 21.1639 41.4771 18.3612C38.6777 15.5586 34.955 14.0144 30.9947 14.013C22.8162 14.013 16.1647 20.6639 16.1615 28.8388C16.1603 31.6405 16.9442 34.3689 18.4284 36.7295L18.781 37.2905L17.2831 42.7619L22.8948 41.2899ZM39.3655 32.6926C39.6764 32.8428 39.8863 32.9443 39.976 33.0939C40.0874 33.2798 40.0874 34.1722 39.7161 35.2136C39.3445 36.2547 37.5638 37.205 36.7074 37.3329C35.9395 37.4477 34.9677 37.4956 33.8999 37.1563C33.2525 36.9509 32.4223 36.6766 31.3589 36.2174C27.1802 34.413 24.3563 30.363 23.8226 29.5975C23.7852 29.5439 23.759 29.5064 23.7444 29.4869L23.7409 29.4821C23.505 29.1674 21.9244 27.0586 21.9244 24.876C21.9244 22.8228 22.9329 21.7466 23.3972 21.2513C23.429 21.2173 23.4582 21.1861 23.4844 21.1575C23.893 20.7113 24.3759 20.5997 24.6731 20.5997C24.9702 20.5997 25.2676 20.6024 25.5273 20.6155C25.5594 20.6171 25.5927 20.6169 25.6272 20.6167C25.8869 20.6152 26.2108 20.6133 26.5302 21.3806C26.6531 21.676 26.833 22.1138 27.0226 22.5755C27.4062 23.5093 27.8299 24.541 27.9045 24.6903C28.016 24.9134 28.0902 25.1736 27.9417 25.4712C27.9194 25.5158 27.8987 25.5579 27.879 25.5982C27.7674 25.826 27.6853 25.9936 27.4959 26.2147C27.4215 26.3017 27.3445 26.3954 27.2675 26.4891C27.1142 26.6759 26.9608 26.8626 26.8273 26.9957C26.6042 27.2179 26.3719 27.4591 26.6319 27.9053C26.8919 28.3516 27.7865 29.8111 29.1116 30.9931C30.536 32.2636 31.774 32.8006 32.4015 33.0728C32.524 33.126 32.6233 33.169 32.6961 33.2055C33.1417 33.4287 33.4017 33.3913 33.6617 33.0939C33.9217 32.7964 34.776 31.7923 35.0731 31.3462C35.3702 30.9001 35.6674 30.9744 36.0759 31.1231C36.4846 31.272 38.676 32.3502 39.1217 32.5732C39.2088 32.6168 39.2901 32.6561 39.3655 32.6926Z" fill="#FDFDFD"/>
+                </svg>
+            </a>
+            <a href="" class="share-modal__socials-item">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="url(#paint0_linear_1525_43644)"/>
+                    <path d="M11.174 31.4679C14.681 29.5362 18.5957 27.924 22.2535 26.3034C28.5462 23.6492 34.864 21.0409 41.2455 18.6127C42.4871 18.1989 44.718 17.7943 44.9367 19.6343C44.817 22.2388 44.3242 24.8281 43.9862 27.4173C43.1284 33.1113 42.1369 38.7858 41.17 44.4611C40.8369 46.3514 38.4687 47.3301 36.9535 46.1203C33.312 43.6606 29.6425 41.2248 26.0475 38.7081C24.8699 37.5114 25.9619 35.7931 27.0136 34.9386C30.0129 31.9828 33.1936 29.4716 36.0361 26.3631C36.8029 24.5114 34.5374 26.0719 33.7901 26.5501C29.6841 29.3796 25.6786 32.3818 21.3496 34.8686C19.1384 36.0858 16.5611 35.0456 14.3509 34.3663C12.3691 33.5458 9.46505 32.7192 11.1738 31.4681L11.174 31.4679Z" fill="white"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1525_43644" x1="22.5035" y1="2.502" x2="7.5035" y2="37.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#37AEE2"/>
+                    <stop offset="1" stop-color="#1E96C8"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            <a href="" class="share-modal__socials-item">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z" fill="#168DE2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 29.9503C12.5 20.3282 20.3503 12.5 29.9997 12.5C39.6492 12.5 47.4996 20.3282 47.4996 29.9503C47.4996 31.3135 47.3859 32.417 47.131 33.5246L47.1272 33.543C47.1266 33.5463 47.0001 34.0568 46.9302 34.2796C46.4978 35.659 45.7147 36.8078 44.6656 37.6019C43.6483 38.3721 42.3868 38.7964 41.1138 38.7964C40.9565 38.7964 40.7981 38.79 40.643 38.7776C38.8352 38.6329 37.2457 37.6842 36.271 36.1716C34.5946 37.8525 32.3705 38.7772 29.9997 38.7772C25.1189 38.7772 21.148 34.8175 21.148 29.9503C21.148 25.0833 25.1189 21.1237 29.9997 21.1237C34.8806 21.1237 38.8515 25.0833 38.8515 29.9503V32.7957C38.8588 34.4559 39.9761 35.1346 40.9305 35.2114C41.8802 35.2845 43.1439 34.7329 43.5842 32.9326C43.8014 31.9452 43.9117 30.9416 43.9117 29.9503C43.9117 22.3009 37.6708 16.0777 29.9997 16.0777C22.3287 16.0777 16.0879 22.3009 16.0879 29.9503C16.0879 37.5998 22.3287 43.8231 29.9997 43.8231C32.67 43.8231 35.267 43.0627 37.5099 41.6238L37.5501 41.598L39.9076 44.3312L39.857 44.3657C36.9436 46.3513 33.535 47.4009 29.9997 47.4009C20.3503 47.4009 12.5 39.5726 12.5 29.9503ZM29.9997 35.1995C32.9022 35.1995 35.2636 32.8447 35.2636 29.9503C35.2636 27.0561 32.9022 24.7014 29.9997 24.7014C27.0972 24.7014 24.7359 27.0561 24.7359 29.9503C24.7359 32.8447 27.0972 35.1995 29.9997 35.1995Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="share-modal__estimate">
+            <div class="share-modal__estimate-title">Ссылка на смету</div>
+            <div class="share-modal__link">
+                <span>https://ruzhbi.ru/Ouh-34u</span>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.66667 8.25H11.9167C12.9292 8.25 13.75 9.07081 13.75 10.0833V18.3333C13.75 19.3459 12.9292 20.1667 11.9167 20.1667H3.66667C2.65415 20.1667 1.83333 19.3459 1.83333 18.3333V10.0833C1.83333 9.07081 2.65415 8.25 3.66667 8.25Z" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.418 13.7497H18.3346C18.8209 13.7497 19.2872 13.5565 19.631 13.2127C19.9748 12.8689 20.168 12.4026 20.168 11.9163V3.66634C20.168 3.18011 19.9748 2.7138 19.631 2.36998C19.2872 2.02616 18.8209 1.83301 18.3346 1.83301H10.0846C9.59841 1.83301 9.13209 2.02616 8.78827 2.36998C8.44446 2.7138 8.2513 3.18011 8.2513 3.66634V4.58301" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal pass-recover-modal" id="recoverPassModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Восстановление пароля</div>
+        <div class="modal__desc">
+            На email <strong>alex@mail.ru</strong> будет отправлено письмо со ссылкой для восстановления пароля.
+        </div>
+        <button class="modal__btn btn btn-yellow">Прислыть ссылку</button>
+
+    </div>
+</div>
+
+<div class="modal pass-recover-modal" id="recoverPassModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <img src="img/check2.svg" alt="">
+        </div>
+        <div class="modal__title display2">Письмо отправлено</div>
+        <div class="modal__desc">
+            На ваш email отправлено письмо <br>
+            со ссылкой. Перейдите по ней для смены пароля. <br>
+            Если его нет во входящих, проверьте папку «Спам».
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="edoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Заявка на переход компании на ЭДО</div>
+        <div class="modal__desc">После отправки данных, мы пригласим вас к ЭДО. Вам необходимо будет подтвердить приглашение.</div>
+
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Идентификационный номер</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                <input type='text' />
+<label>Название оператора</label>
+<div class="form-group__error-text">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 10.6667H8V8H7.33333M8 5.33333H8.00667M14 8C14 8.78793 13.8448 9.56815 13.5433 10.2961C13.2417 11.0241 12.7998 11.6855 12.2426 12.2426C11.6855 12.7998 11.0241 13.2417 10.2961 13.5433C9.56815 13.8448 8.78793 14 8 14C7.21207 14 6.43185 13.8448 5.7039 13.5433C4.97595 13.2417 4.31451 12.7998 3.75736 12.2426C3.20021 11.6855 2.75825 11.0241 2.45672 10.2961C2.15519 9.56815 2 8.78793 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2C9.5913 2 11.1174 2.63214 12.2426 3.75736C13.3679 4.88258 14 6.4087 14 8Z" stroke="#EA1111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Обязательное поле</span>
+</div>
+
+
+            </fieldset>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
+<!--<div class="modal-backdrop show"></div>-->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

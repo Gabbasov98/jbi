@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 9999999', { autoclear: false }, { placeholder: '+7            ' });
-
+    $(".j-select").niceSelect()
 
     $('.image-popup').magnificPopup({
         type: 'image'
@@ -115,6 +115,16 @@ $(document).ready(function() {
     }
     $(".breadcrumbs__btn").click(function() {
         $(".breadcrumbs").removeClass("breadcrumbs--collapse")
+    })
+
+    $(".pass-toggle").click(function () {
+        if($(this).hasClass("pass-toggle--active")){
+            $(this).removeClass("pass-toggle--active")
+            $(this).siblings("input").attr("type","password")
+        } else{
+            $(this).addClass("pass-toggle--active")
+            $(this).siblings("input").attr("type","text")
+        }
     })
 
 });
