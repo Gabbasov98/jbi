@@ -843,15 +843,17 @@
     min-height: 104px;
     padding: 28px 0;
     position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 1px;
-        width: calc(100% - 80px);
-        background-color: $grey2;
+    &:not(:last-child){
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: calc(100% - 80px);
+            background-color: $grey2;
+        }
     }
     &__content{
         display: flex;

@@ -173,10 +173,10 @@
     input {
         position: absolute;
         opacity: 0;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
+        width: 23px;
+        height: 23px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 2;
         cursor: pointer;
         &:checked+label {
@@ -204,7 +204,6 @@
         font-size: 14px;
         line-height: 140%;
         color: $grey;
-        cursor: pointer;
         &:before {
             content: '';
             position: absolute;

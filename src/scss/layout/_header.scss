@@ -1,4 +1,3 @@
-@import "vars";
 .header {
     position: relative;
     // transition: all .225s;
@@ -861,11 +860,11 @@
         &__estimate {
             position: absolute;
             top: 17px;
-            right: 104px;
+            right: 109px;
         }
         &__call {
             display: block;
-            margin-right: 65px;
+            margin-right: 70px;
             margin-left: 35px;
         }
         &__phone,

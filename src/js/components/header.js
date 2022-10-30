@@ -173,9 +173,17 @@ $(document).ready(function() {
         $(this).toggleClass("header__toggle-search--active")
     })
 
-    $(".header-lk__toggle").click(function() {
-        $(".header-lk").toggleClass("header-lk--active")
-    })
+
+
+    if (window.innerWidth<800){
+        $(".header-lk__toggle").click(function() {
+            $(".header-lk").toggleClass("header-lk--active")
+        })
+    } else{
+        $(".header-lk__toggle").mouseenter(function() {
+            $(".header-lk").toggleClass("header-lk--active")
+        })
+    }
 
     $(document).mouseup(function(e) {
         var div = $('.header-lk__dropdown');
