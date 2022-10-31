@@ -13,6 +13,10 @@ $(".doc-card__check input").change(function () {
     }
 })
 
-$(".doc-selected__close").click(function () {
+$("._close-doc-popup").click(function () {
     $(".doc-selected").removeClass("doc-selected--active")
+
+    $(".doc-card__check input").each(function (index, el){
+        $(el).prop("checked",false)
+    });
 })
