@@ -200,12 +200,79 @@
   }
 }
 
+.doc-selected{
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  z-index: 24;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
+  &--active{
+    opacity: 1;
+    pointer-events: unset;
+  }
+  &__inner{
+    background-color: $primary;
+    padding: 13px 27px 13px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 253px);
+    margin-left: auto;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+  }
+  &__icon{
+    width: 48px;
+    height: 48px;
+    border: 1px solid $black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+  &__name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  &__action{
+    display: flex;
+    align-items: center;
+  }
+  &__download{
+    height: 42px;
+    padding: 0 16px;
+    flex-shrink: 0;
+    font-size: 15px;
+    svg{
+      margin-right: 12px;
+    }
+  }
+  &__close{
+    margin-left: 40px;
+  }
+}
+
+
 @media screen and (max-width: 1500px){
   .orders{
     &__grid{
       padding-left: 32px;
       padding-right: 20px;
       grid-template-columns: calc(20% - 7.5px) calc(20% - 7.5px) calc(20% - 7.5px) calc(40% - 7.5px);
+    }
+  }
+
+  .doc-selected{
+    &__inner{
+      margin-left: 20px;
     }
   }
 }
@@ -325,6 +392,14 @@
       }
     }
   }
+
+  .doc-selected{
+    &__inner{
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
 }
 
 
@@ -422,6 +497,42 @@
           display: none;
         }
       }
+    }
+  }
+
+  .doc-selected{
+    &__inner{
+      width: 280px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      padding: 12px 20px;
+      position: relative;
+    }
+    &__info{
+      padding-right: 25px;
+    }
+    &__icon{
+      width: 42px;
+      height: 42px;
+    }
+    &__name{
+      font-size: 15px;
+    }
+    &__close{
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      svg{
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__download{
+      height: 40px;
+      width: 100%;
+      margin-top: 12px;
+      font-size: 13px;
     }
   }
 }
