@@ -165,7 +165,6 @@ $(document).ready(function() {
                 $(".header").removeClass("header--fix")
             }
         }
-
     }
 
     $(".header__toggle-search").click(function() {
@@ -175,11 +174,11 @@ $(document).ready(function() {
 
 
 
-    if (window.innerWidth<800){
+    if (window.innerWidth < 800) {
         $(".header-lk__toggle").click(function() {
             $(".header-lk").toggleClass("header-lk--active")
         })
-    } else{
+    } else {
         $(".header-lk__toggle").mouseenter(function() {
             $(".header-lk").toggleClass("header-lk--active")
         })

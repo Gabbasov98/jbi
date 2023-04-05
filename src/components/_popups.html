@@ -502,4 +502,45 @@
     </div>
 </div>
 
+<div class="modal" id="calcDeliveryModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">
+            Расчет доставки от склада № 12547 в г. Екатеринбург
+        </div>
+        <div class="modal__desc">
+            Логист рассчитает вашу заявку. Менеджер свяжется с вами в течение рабочего дня.
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_input.html',{"type":"tel","label":"Телефон*"})
+            </fieldset>
+            <fieldset class='modal__form-group form-group'>
+                @@include('ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+            </fieldset>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Отправить </button>
+        </form>
+
+    </div>
+</div>
+
 <!--<div class="modal-backdrop show"></div>-->
