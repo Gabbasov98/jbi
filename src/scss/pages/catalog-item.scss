@@ -310,6 +310,7 @@
         padding: 0;
     }
     &__calculate{
+        color: $black;
         border-bottom: 1px dashed #333333;
         &:hover{
             color: $primaryHover;
@@ -498,7 +499,8 @@
     }
     .catalog-delivery{
         td,th{
-            @media screen and (min-width: 1201px){
+            @media screen and (min-width: 801px){
+                width: 20% !important;
                 &:nth-child(1){
                     width: 268px;
                 }
@@ -744,9 +746,6 @@
         }
     }
     .catalog-delivery {
-        &__calculate{
-
-        }
         &__table {
             &-desc{
                 font-size: 12px;
@@ -759,14 +758,14 @@
             }
             th,
             td {
-                width: 120px;
+                width: 20%;
                 padding-right: 5px;
                 &:first-child {
-                    width: 87px;
-                    padding-left: 22px;
+                    //width: 102px;
+                    padding-left: 32px;
                 }
                 &:last-child {
-                    width: 150px;
+                    //width: 150px;
                     padding-right: 10px;
                 }
             }
@@ -780,7 +779,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .catalog-item {
         &__top {
             margin-top: 40px;
@@ -867,14 +866,14 @@
         &__table {
             th,
             td {
-                width: unset;
+                //width: unset;
                 &:first-child{
                     padding-left: 30px;
                 }
                 &:nth-child(4),
                 &:nth-child(5),
                 &:first-child {
-                    width: auto;
+                    //width: auto;
                 }
                 br{
                     display: none;
@@ -1138,6 +1137,8 @@
                 }
             }
             td {
+                font-size: 15px;
+                width: 100% !important;
                 height: unset;
                 border: none;
                 padding: 0 !important;

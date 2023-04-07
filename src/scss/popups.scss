@@ -299,7 +299,7 @@
 @media screen and (max-width: 800px) {
     .modal {
         &-dialog {
-            height: 100vh;
+            height: calc(100 * var(--vh));
             width: 100%;
             max-width: 100%;
             margin: 0;

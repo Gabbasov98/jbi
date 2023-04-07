@@ -127,7 +127,14 @@ $(document).ready(function() {
         }
     })
 
+    fix100vh();
 });
+
+
+function fix100vh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
 
 function setSelect(el) {
     let selected = $(el).find(".custom-select__item--selected").html()
